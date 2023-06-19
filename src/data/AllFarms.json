@@ -1,0 +1,283 @@
+[
+    {
+        "Name of farm": "SoulFire Farm",
+        "img":"./assets/",
+        "Contact Info":{
+            "Address":"",
+            "Phone":"",
+            "website":"www.soulfirefarm.org"
+        },
+
+        "Region":"(US-NE) NorthEast",
+        "QTBIPOC Affirming Programming": true,
+        "Black Affirming Programming": true,
+        
+        "Program Name":"BIPOC Farm Immersion Program",
+        "Hires Apprentices": false,
+        "Farm Type":{
+            "Fruit/Vegetable": true,
+            "Flower/Herb": true,             
+            "Mushroom": true,
+            "Aquaponic/Fish": false,
+            "Garden/Small Space/Rooftop/Urban": false,
+            "Bee/Pollinator/Insect": false,
+            "Animal husbandry": false
+        },
+
+        "Ownership":{
+            "Black-owned or led": true,
+              "QTBIPOC-owned or led": true,
+              "Woman-owned or led": true
+        },
+
+        "Community Type":{
+            "QTBIPOC/LGBTQIA+ BIPOC": true,
+            "Black/African Diaspora": true,
+            "Indigenous/Native American": true,
+            "East & South Asian/Pacific Islander": false,
+            "Latin American": true,
+            "Arab/Middle Eastern/North African": false
+            }
+    },
+
+    {
+        "Name of farm": "Farm2",
+        "img":"./assets/",
+        "Contact Info":{
+            "Address":"",
+            "Phone":"",
+            "website":"www.google.com"
+        },
+
+        "Region":"(US-SE) SouthEast",
+        "QTBIPOC Affirming Programming": true,
+        "Black Affirming Programming": true,
+        
+        "Program Name":"QTBIPOC Farm Immersion Program2",
+        "Hires Apprentices": false,
+        "Farm Type":{
+            "Fruit/Vegetable": true,
+            "Flower/Herb": true,             
+            "Mushroom": true,
+            "Aquaponic/Fish": false,
+            "Garden/Small Space/Rooftop/Urban": false,
+            "Bee/Pollinator/Insect": false,
+            "Animal husbandry": false
+        },
+
+        "Ownership":{
+            "Black-owned or led": true,
+              "QTBIPOC-owned or led": true,
+              "Woman-owned or led": true
+        },
+
+        "Community Type":{
+            "QTBIPOC/LGBTQIA+ BIPOC":true,
+            "Black/African Diaspora": true,
+            "Indigenous/Native American": true,
+            "East & South Asian/Pacific Islander": true,
+            "Latin American": true,
+            "Arab/Middle Eastern/North African": false
+            }
+    },
+    {
+        "Name of farm": "Farm3",
+        "img":"./assets/",
+        "Contact Info":{
+            "Address":"",
+            "Phone":"",
+            "website":"www.google.com"
+        },
+
+        "Region":"(US-MW) Midwest",
+        "QTBIPOC Affirming Programming": true,
+        "Black Affirming Programming": true,
+        
+        "Program Name":"QTBIPOC Farm Immersion Program3",
+        "Hires Apprentices": false,
+        "Farm Type":{
+            "Fruit/Vegetable": true,
+            "Flower/Herb": true,             
+            "Mushroom": true,
+            "Aquaponic/Fish": true,
+            "Garden/Small Space/Rooftop/Urban": true,
+            "Bee/Pollinator/Insect": false,
+            "Animal husbandry": false
+        },
+
+        "Ownership":{
+            "Black-owned or led": true,
+              "QTBIPOC-owned or led": true,
+              "Woman-owned or led": true
+        },
+
+        "Community Type":{
+            "QTBIPOC/LGBTQIA+ BIPOC":false,
+            "Black/African Diaspora": true,
+            "Indigenous/Native American": false,
+            "East & South Asian/Pacific Islander": false,
+            "Latin American": false,
+            "Arab/Middle Eastern/North African": true
+            }
+    },
+    {
+        "Name of farm": "Farm4",
+        "img":"./assets/",
+        "Contact Info":{
+            "Address":"",
+            "Phone":"",
+            "website":"www.google.com"
+        },
+
+        "Region":"(US-W) West/Northwest",
+        "QTBIPOC Affirming Programming": true,
+        "Black Affirming Programming": true,
+        
+        "Program Name":"QTBIPOC Farm Immersion Program4",
+        "Hires Apprentices": false,
+        "Farm Type":{
+            "Fruit/Vegetable": true,
+            "Flower/Herb": true,             
+            "Mushroom": true,
+            "Aquaponic/Fish": true,
+            "Garden/Small Space/Rooftop/Urban": true,
+            "Bee/Pollinator/Insect": true,
+            "Animal husbandry": false
+        },
+
+        "Ownership":{
+            "Black-owned or led": true,
+              "QTBIPOC-owned or led": true,
+              "Woman-owned or led": true
+        },
+
+        "Community Type":{
+            "QTBIPOC/LGBTQIA+ BIPOC":true,
+            "Black/African Diaspora": true,
+            "Indigenous/Native American": true,
+            "East & South Asian/Pacific Islander": true,
+            "Latin American": true,
+            "Arab/Middle Eastern/North African": true
+            }
+    },
+    {
+        "Name of farm": "Farm5",
+        "img":"./assets/",
+        "Contact Info":{
+            "Address":"",
+            "Phone":"",
+            "website":"www.google.com"
+        },
+
+        "Region":"(US-S) South",
+        "QTBIPOC Affirming Programming": true,
+        "Black Affirming Programming": true,
+        
+        "Program Name":"QTBIPOC Farm Immersion Program5",
+        "Hires Apprentices": true,
+        "Farm Type":{
+            "Fruit/Vegetable": true,
+            "Flower/Herb": true,             
+            "Mushroom": true,
+            "Aquaponic/Fish": true,
+            "Garden/Small Space/Rooftop/Urban": true,
+            "Bee/Pollinator/Insect": true,
+            "Animal husbandry": true
+        },
+
+        "Ownership":{
+            "Black-owned or led": true,
+              "QTBIPOC-owned or led": true,
+              "Woman-owned or led": true
+        },
+
+        "Community Type":{
+            "QTBIPOC/LGBTQIA+ BIPOC":true,
+            "Black/African Diaspora": true,
+            "Indigenous/Native American": true,
+            "East & South Asian/Pacific Islander": true,
+            "Latin American": true,
+            "Arab/Middle Eastern/North African": true
+            }
+    },
+    {
+        "Name of farm": "Farm6",
+        "img":"./assets/",
+        "Contact Info":{
+            "Address":"",
+            "Phone":"",
+            "website":"www.google.com"
+        },
+
+        "Region":"(US-PO) Pacific Ocean",
+        "QTBIPOC Affirming Programming": true,
+        "Black Affirming Programming": true,
+        
+        "Program Name":"QTBIPOC Farm Immersion Program6",
+        "Hires Apprentices": true,
+        "Farm Type":{
+            "Fruit/Vegetable": true,
+            "Flower/Herb": true,             
+            "Mushroom": false,
+            "Aquaponic/Fish": false,
+            "Garden/Small Space/Rooftop/Urban": false,
+            "Bee/Pollinator/Insect": false,
+            "Animal husbandry": false
+        },
+
+        "Ownership":{
+            "Black-owned or led": true,
+              "QTBIPOC-owned or led": false,
+              "Woman-owned or led": true
+        },
+
+        "Community Type":{
+            "QTBIPOC/LGBTQIA+ BIPOC": true,
+            "Black/African Diaspora": true,
+            "Indigenous/Native American": false,
+            "East & South Asian/Pacific Islander": true,
+            "Latin American": false,
+            "Arab/Middle Eastern/North African": false
+            }
+    },
+    {
+        "Name of farm": "Farm7",
+        "img":"./assets/",
+        "Contact Info":{
+            "Address":"",
+            "Phone":"",
+            "website":"www.google.com"
+        },
+
+        "Region":"(US-CAR) Caribbean (Puerto Rico, US Virgin Islands)",
+        "QTBIPOC Affirming Programming": true,
+        "Black Affirming Programming": true,
+        
+        "Program Name":"QTBIPOC Farm Immersion Program7",
+        "Hires Apprentices": true,
+        "Farm Type":{
+            "Fruit/Vegetable": true,
+            "Flower/Herb": true,             
+            "Mushroom": true,
+            "Aquaponic/Fish": true,
+            "Garden/Small Space/Rooftop/Urban": true,
+            "Bee/Pollinator/Insect": true,
+            "Animal husbandry": true
+        },
+
+        "Ownership":{
+            "Black-owned or led": true,
+              "QTBIPOC-owned or led": true,
+              "Woman-owned or led": true
+        },
+
+        "Community Type":{
+            "QTBIPOC/LGBTQIA+ BIPOC": true,
+            "Black/African Diaspora": true,
+            "Indigenous/Native American": true,
+            "East & South Asian/Pacific Islander": false,
+            "Latin American": true,
+            "Arab/Middle Eastern/North African": false
+            }
+    }
+]

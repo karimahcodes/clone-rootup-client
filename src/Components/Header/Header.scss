@@ -1,0 +1,26 @@
+// @use '' as *;
+// @use '' as *;
+// @use ''  as *;
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    // &__logo-link{}
+    // &__logo{}
+
+    &__nav{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__nav-link{      
+        text-decoration: none;
+        // &--about{}
+        // &--farms{}
+        // &--user{}
+    }
+}
