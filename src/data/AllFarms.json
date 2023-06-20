@@ -14,6 +14,13 @@
         "Black Affirming Programming": true,
         
         "Program Name":"BIPOC Farm Immersion Program",
+        
+        "Program-Format":{
+            "in-person": true,
+            "virtual": false,
+            "hybrid": false
+        },
+
         "Hires Apprentices": false,
         "Farm Type":{
             "Fruit/Vegetable": true,
@@ -56,6 +63,13 @@
         "Black Affirming Programming": true,
         
         "Program Name":"QTBIPOC Farm Immersion Program2",
+        
+        "Program-Format":{
+            "in-person": true,
+            "virtual": false,
+            "hybrid": false
+        },
+
         "Hires Apprentices": false,
         "Farm Type":{
             "Fruit/Vegetable": true,
@@ -97,6 +111,13 @@
         "Black Affirming Programming": true,
         
         "Program Name":"QTBIPOC Farm Immersion Program3",
+        
+        "Program-Format":{
+            "in-person": true,
+            "virtual": false,
+            "hybrid": false
+        },
+
         "Hires Apprentices": false,
         "Farm Type":{
             "Fruit/Vegetable": true,
@@ -138,6 +159,13 @@
         "Black Affirming Programming": true,
         
         "Program Name":"QTBIPOC Farm Immersion Program4",
+        
+        "Program-Format":{
+            "in-person": true,
+            "virtual": false,
+            "hybrid": false
+        },
+
         "Hires Apprentices": false,
         "Farm Type":{
             "Fruit/Vegetable": true,
@@ -179,6 +207,13 @@
         "Black Affirming Programming": true,
         
         "Program Name":"QTBIPOC Farm Immersion Program5",
+        
+        "Program-Format":{
+            "in-person": true,
+            "virtual": false,
+            "hybrid": false
+        },
+
         "Hires Apprentices": true,
         "Farm Type":{
             "Fruit/Vegetable": true,
@@ -220,6 +255,13 @@
         "Black Affirming Programming": true,
         
         "Program Name":"QTBIPOC Farm Immersion Program6",
+        
+        "Program-Format":{
+            "in-person": true,
+            "virtual": false,
+            "hybrid": false
+        },
+
         "Hires Apprentices": true,
         "Farm Type":{
             "Fruit/Vegetable": true,
@@ -261,6 +303,13 @@
         "Black Affirming Programming": true,
         
         "Program Name":"QTBIPOC Farm Immersion Program7",
+        
+        "Program-Format":{
+            "in-person": true,
+            "virtual": false,
+            "hybrid": false
+        },
+
         "Hires Apprentices": true,
         "Farm Type":{
             "Fruit/Vegetable": true,

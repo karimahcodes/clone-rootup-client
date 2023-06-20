@@ -11,8 +11,25 @@
     // &__title-div{}
     // &__program{}
     // &__farm-name{}
-    // &__map{}
-    // &__CTA-links{}
+    &__map{
+        height: auto;
+        width: 95vw;
+        border-bottom: lightblue; 
+    }
+    &__CTA-div{
+        display: flex;
+        flex-direction: row;
+        &--link{
+            text-decoration: none;
+            background-color: lightblue;    //placeholder
+            width: 8rem;                     //placeholder
+            &:hover{
+                background-color: black;
+                color: white
+            }
+
+        }
+    }
 
 
 

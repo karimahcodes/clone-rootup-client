@@ -37,16 +37,17 @@ export default function SelectedFarmPage(){
                         <h2 className='farm__program'>farm.Program/ Name</h2>
                         <h3 className="farm__farm-name">farm.Name/ of/ Farm </h3>
                     </div>
+                    
                     <FarmDetails farm={farm} key={farm.id}/>
+
                     <div className='farm__map'>
                         placeholder map
                     </div>
 
-                
 
                     <div className='farm__CTA-div'>
-                        <Link >Apply In-App </Link>
-                        <Link >Website</Link>
+                        <Link className='farm__CTA-div--link'>Apply In-App </Link>
+                        <Link className='farm__CTA-div--link'>Website</Link>
                     </div>
                 </div>
             )
