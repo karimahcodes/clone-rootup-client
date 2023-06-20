@@ -1,7 +1,7 @@
 import './FarmDetails.scss';
 
 
-export default function FarmDetails(){
+export default function FarmDetails({/* farm props */}){
 
     return (
         <main className="details">

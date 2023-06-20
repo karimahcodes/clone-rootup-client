@@ -1,10 +1,10 @@
 [
     {
         "Name of farm": "SoulFire Farm",
-        "img":"./assets/",
+        "img":"../assets/images/almond-orchard.jpg",
         "Contact Info":{
-            "Address":"",
-            "Phone":"",
+            "Address":"123 Sesame Street, East Elmo, New York 11344",
+            "Phone":"718-788-0777",
             "website":"www.soulfirefarm.org"
         },
 

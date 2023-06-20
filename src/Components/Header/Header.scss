@@ -8,19 +8,62 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: .0625rem solid lightgrey;
 
-    // &__logo-link{}
-    // &__logo{}
+    &__logo-link{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        // padding-top: 0;
+        // border: red 2px solid;
+    }
+    // &__logo{
+    //     // margin-bottom: 0;
+    //     // border: red 2px solid;
+    // }
 
     &__nav{
         display: flex;
         flex-direction: row;
     }
     
-    &__nav-link{      
-        text-decoration: none;
-        // &--about{}
-        // &--farms{}
-        // &--user{}
+    &__nav-link {
+               
+
+        &--about{
+            text-decoration: none;
+            color: black;
+            padding: 0 1rem;
+            &:hover {
+                color: black;
+                font-weight: 700;
+                background-color: lightblue;
+            }
+            // &:active{ 
+            //     color: black;
+            //     font-weight: 700;
+            //     background-color: lightblue;
+            // }
+        }
+        &--farms{
+            text-decoration: none;
+            color: black;
+            padding: 0 1rem;
+            &:hover {
+                color: black;
+                font-weight: 700;
+                background-color: lightblue;
+            }
+        }
+        &--user{
+            text-decoration: none;
+            color: black;
+            padding: 0 1rem;
+            &:hover {
+                color: black;
+                font-weight: 700;
+                background-color: lightblue;
+            }
+        }
     }
 }
