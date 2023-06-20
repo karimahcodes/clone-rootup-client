@@ -2,9 +2,10 @@
 @use '../../partials/typography' as *;
 @use '../../partials/variables' as *;
 
-.farm {
-    &__banner-image{
 
-    width: 95vw;
-    }
+.about{
+    display: flex;
+    flex-direction: column;
+
+    
 }

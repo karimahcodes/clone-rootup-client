@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "Name of farm": "SoulFire Farm",
         "img":"../assets/images/almond-orchard.jpg",
         "Contact Info":{
@@ -40,7 +41,8 @@
             }
     },
 
-    {
+    {   
+        "id": 2,
         "Name of farm": "Farm2",
         "img":"./assets/",
         "Contact Info":{
@@ -81,6 +83,7 @@
             }
     },
     {
+        "id": 3,
         "Name of farm": "Farm3",
         "img":"./assets/",
         "Contact Info":{
@@ -121,6 +124,7 @@
             }
     },
     {
+        "id": 4,
         "Name of farm": "Farm4",
         "img":"./assets/",
         "Contact Info":{
@@ -161,6 +165,7 @@
             }
     },
     {
+        "id": 5,
         "Name of farm": "Farm5",
         "img":"./assets/",
         "Contact Info":{
@@ -201,6 +206,7 @@
             }
     },
     {
+        "id": 6,
         "Name of farm": "Farm6",
         "img":"./assets/",
         "Contact Info":{
@@ -241,6 +247,7 @@
             }
     },
     {
+        "id": 7,
         "Name of farm": "Farm7",
         "img":"./assets/",
         "Contact Info":{
