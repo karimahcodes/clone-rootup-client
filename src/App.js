@@ -1,6 +1,7 @@
 // import FarmSearchPage from './Pages/FarmSearchPage/FarmSearchPage';
 // import FarmCategoryPage from './Pages/FarmCategoryPage/FarmCategoryPage';
 import Header from './Components/Header/Header';
+import FarmSearchPage from './Pages/FarmSearchPage/FarmSearchPage';
 import SelectedFarmPage from './Pages/SelectedFarmPage/SelectedFarmPage';
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -15,11 +16,15 @@ function App() {
         {/* dummy route: */}
         <Route path="/" element={<SelectedFarmPage/>} />
 
-        <Route path="farms/:id" element={<SelectedFarmPage/>} />
+        <Route path="farms/:farmId" element={<SelectedFarmPage/>} />
 
+        <Route path="/browse" element={<FarmSearchPage />} />
+        <Route path="/browse/farm-type" element={<FarmCategoryPage category="farmTypes"/>}/>
+
+        
 
         {/* <Route path="/" element={<FarmSearchPage/>} /> 
-        {/* <Route path="farms" element={<FarmCategoryPage/>} />
+        {/* <Route path="/farms" element={<FarmCategoryPage/>} />
          */}
       </Routes>
     </BrowserRouter>
