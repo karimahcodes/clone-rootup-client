@@ -1,9 +1,8 @@
-// import FarmSearchPage from './Pages/FarmSearchPage/FarmSearchPage';
 // import FarmCategoryPage from './Pages/FarmCategoryPage/FarmCategoryPage';
 import Header from './Components/Header/Header';
 import FarmSearchPage from './Pages/FarmSearchPage/FarmSearchPage';
 import SelectedFarmPage from './Pages/SelectedFarmPage/SelectedFarmPage';
-
+import AboutPage from './Pages/AboutPage/About';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,6 +18,8 @@ function App() {
         <Route path="farms/:farmId" element={<SelectedFarmPage/>} />
 
         <Route path="/browse" element={<FarmSearchPage />} />
+        
+        <Route path="/About" element={<AboutPage />} />
         {/* <Route path="/browse/farm-type" element={<FarmCategoryPage category="farmTypes"/>}/> */}
         {/* <Route path="/browse/community" element={<FarmCategoryPage category="community"/>}/> */}
         

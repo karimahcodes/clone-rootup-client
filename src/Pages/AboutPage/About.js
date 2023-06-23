@@ -5,16 +5,40 @@ export default function About(){
         <div className='about'>
             <h2>About the rootUP app</h2>
             <p></p>
-            
+
             <section className='section'>
 
                 <section className='section__regions'> 
                     <h3>Current Regions</h3>
+                    <ul className='section__list'>
+                        <li className='section__item'>(US-NE) NorthEast</li>
+                        <li className='section__item'>(US-SE) SouthEast</li>
+                        <li className='section__item'>(US-MW) Midwest</li>
+                        <li className='section__item'>(US-W) West/Northwest</li>
+                        <li className='section__item'>(US-S) South</li>
+                        <li className='section__item'>(US-PO) Pacific Ocean</li>
+                        <li className='section__item'>(US-CAR) Caribbean (Puerto Rico, US Virgin Islands)</li>
+                    </ul>
                 </section>
-
+                
+        
                 <section className='section__communities'> 
                     <h3>Communities currently represented</h3>
+                    <ul className='section__list'>
+                        <li className='section__item'>QTBIPOC</li>
+                        <li className='section__item'>African Diaspora</li>
+                        <li className='section__item'>Asian American Pacific Islander</li>
+                        <li className='section__item'>Latin American</li>
+                        <li className='section__item'>"Arab/Middle Eastern/North African</li>
+                        <li className='section__item'>Indigenous/Native American</li>
+                    </ul>                   
                 </section>
+
+
+
+                
+
+          
 
                 <section className='section__feedback'> 
                     <h3>How to submit feedback and requests:</h3>
