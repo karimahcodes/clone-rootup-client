@@ -14,15 +14,12 @@ export default function SelectedFarmPage(){
     function goBack(){ 
         navigate(-1) 
     }
-    // const apiURL = 'http://localhost:3000/farms/';
 
     useEffect(()=>{
         axios
             .get(`http://localhost:8080/farms/${farmId}`)
             .then((response)=>{setFarm(response.data)
-            
-            
-            
+                        
             })
             .catch((error)=>{console.log(error)})
     }, [farmId])
@@ -43,7 +40,7 @@ export default function SelectedFarmPage(){
                     <h3 className="farm__farm-name">farm.Name/ of/ Farm </h3>
                 </div>
                 
-                <FarmDetails /*farm={farm} key={farm.id} */ />
+                <FarmDetails farm={farm} key={farm.id}  />
 
                 <div className='farm__map'>
                     placeholder map
