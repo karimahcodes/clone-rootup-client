@@ -10,25 +10,24 @@ import { Link } from 'react-router-dom';
 export default function Header(){
     return (
         <header className="header">
-            <Link className="header__logo-link" to="/">
+            <Link className="header__logo-link" to="/About">
                 <img className="header__logo" src={logoSrc}/>
                 <p className='header__logo-text'>rootUP</p>    
             </Link>
             <nav className="header__nav">
-                <Link className="header__nav-link--about" to="/About">             {/* CREATE NAVLINK MIXIN */}
+                <Link className="header__nav-link--about" to="/About">             
                     <img className='header__homeicon'src={homeSrc} alt='icon of a small house with pointed roof'/>
-                    <p className='header__text--about'>About</p>                   {/* placeholder, needs icon */}
-
-                </Link>
-
-                <Link className="header__nav-link--farms" to="/farms">
+                    <p className='header__text--about'>About</p>
+                </Link> 
+{/* decide if a link to all farms at /farms route is needed */}
+                <Link className="header__nav-link--farms" to="/browse">
                     <img className='header__leafIcon'src={searchSrc} alt='icon of a leaf'/>
-                    <p className='header__text--farms'>Farms</p>                    {/* placeholder, needs icon */}
+                    <p className='header__text--farms'>Farms</p>
                 </Link>
                 
                 <Link className="header__nav-link--user" to="/user">
                     <img className='header__homeIcon'src={profileSrc} alt='icon of a small person from the shoulders up'/>
-                    <p className='header__text--profile'>Profile</p>                    {/* placeholder, needs icon */}
+                    <p className='header__text--profile'>Profile</p>
                 </Link>
             </nav>
 
