@@ -2,6 +2,7 @@ import './FarmDetails.scss';
 import checkSrc from '../../assets/icons/check-verified_icon.svg';
 
 export default function FarmDetails({farm}){
+    
     // const hires = farms.HiresApprentices;
 
 
@@ -15,9 +16,8 @@ export default function FarmDetails({farm}){
             </div>
             <div className="details__location">
                 <h3 className="details__text details__text--region">
-                    REGION: \farm.region\
+                    REGION: {farm.region}
                 </h3>
-
                 {/*
                 <img className="details__map" src={regionSrc} alt="map of farm address"/>
                 */}

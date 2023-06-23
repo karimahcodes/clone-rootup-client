@@ -9,7 +9,8 @@ import FarmDetails from '../../Components/FarmDetails/FarmDetails';
 
 export default function SelectedFarmPage(){
     const {farmId}= useParams();
-    const [farm, setFarm] = useState();
+    // const farmImageSource = farm.farmImageSource
+    const [farm, setFarm] = useState({});
     let navigate = useNavigate(); 
     function goBack(){ 
         navigate(-1) 
@@ -19,7 +20,7 @@ export default function SelectedFarmPage(){
         axios
             .get(`http://localhost:8080/farms/${farmId}`)
             .then((response)=>{setFarm(response.data)
-                        
+             console.log(response)           
             })
             .catch((error)=>{console.log(error)})
     }, [farmId])
@@ -30,16 +31,13 @@ export default function SelectedFarmPage(){
         return (
             <div className='farm'>
                 <NavLink onClick={goBack}> Back to Farm List </NavLink>
-                <img className="farm__banner-image" src={imgSrc} alt="almond orchard" />
-                {/* imgSrc will be 
-                
-                const = farmData.img */}
+                <img className="farm__banner-image" src={`${imgSrc}`} alt="almond orchard" />
+               {/* src will be farm.farmImageSource */}
                 
                 <div className='farm__title-div'>
-                    <h2 className='farm__program'>farm.Program/ Name</h2>
-                    <h3 className="farm__farm-name">farm.Name/ of/ Farm </h3>
+                    <h2 className='farm__program'>{`${farm.programName}`}</h2>
+                    <h3 className="farm__farm-name">{`${farm.farmName}`} </h3>
                 </div>
-                
                 <FarmDetails farm={farm} key={farm.id}  />
 
                 <div className='farm__map'>
