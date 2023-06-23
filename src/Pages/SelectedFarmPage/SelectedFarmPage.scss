@@ -19,8 +19,12 @@
     &__CTA-div{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;        
+        width: 100%;
+
         &--link{
             @include CTA-btn;
+            padding: .75rem;
 
         }
     }

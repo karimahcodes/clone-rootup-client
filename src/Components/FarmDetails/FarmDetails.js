@@ -1,7 +1,7 @@
 import './FarmDetails.scss';
 import checkSrc from '../../assets/icons/check-verified_icon.svg';
 
-export default function FarmDetails({/* farm props */}){
+export default function FarmDetails({farm}){
     // const hires = farms.HiresApprentices;
 
 
@@ -32,7 +32,7 @@ export default function FarmDetails({/* farm props */}){
                     {/* {hires &&  */}
                         <div className="details__conditional-row">
                             <p className='details__table-text'>farm.qtbipocAffirming </p>
-                            <img className="details__checkbox" src={checkSrc}/>
+                            <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc}/>
                         </div>
                     {/* } */}                   
                 </div>
@@ -40,7 +40,7 @@ export default function FarmDetails({/* farm props */}){
                     {/* {hires &&  */}
                         <div className="details__conditional-row">
                             <p className='details__table-text'>farm.blackAffirming </p>
-                            <img className="details__checkbox" src={checkSrc}/>
+                            <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc}/>
                         </div>
                     {/* } */}                   
                 </div>
@@ -48,7 +48,7 @@ export default function FarmDetails({/* farm props */}){
                     {/* {hires &&  */}
                         <div className="details__conditional-row">
                             <p className='details__table-text'> Hires Apprentices</p>
-                            <img className="details__checkbox" src={checkSrc}/>
+                            <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc}/>
                         </div>
                     {/* } */}
                 </div>
@@ -58,7 +58,7 @@ export default function FarmDetails({/* farm props */}){
                     {/* {hires &&  */}
                         <div className="details__conditional-row">
                             <p className='details__table-text'> Pays Apprenctices /farm.paidApprenticeship/</p>
-                            <img className="details__checkbox" src={checkSrc}/>
+                            <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc}/>
                         </div>
                     {/* } */}
                 </div>

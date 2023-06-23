@@ -51,8 +51,8 @@ export default function SelectedFarmPage(){
 
 
                 <div className='farm__CTA-div'>
-                    <Link className='farm__CTA-div--link'>Apply</Link>
-                    <Link className='farm__CTA-div--link'>Website</Link>
+                    <Link to='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link'>Apply</Link>
+                    <Link to='https://www.google.com' className='farm__CTA-div--link'>Website</Link>
                 </div>
             </div>
         )
