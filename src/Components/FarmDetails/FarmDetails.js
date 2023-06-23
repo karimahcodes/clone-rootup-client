@@ -29,12 +29,12 @@ export default function FarmDetails({farm}){
 
                 </div> 
                 <div className='details__table-row'>
-                    {farm.hiresApprentices && 
+                    {/* {farm.hiresApprentices &&  */}
                         <div className="details__conditional-row">
                             <p className='details__table-text'>farm.qtbipocAffirming </p>
                             <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc}/>
                         </div>
-                     }                    
+                     {/* }                     */}
                 </div>
                 <div className='details__table-row'>
                     {/* {hires &&  */}
@@ -45,12 +45,12 @@ export default function FarmDetails({farm}){
                     {/* } */}                   
                 </div>
                 <div className='details__table-row'>
-                    {/* {hires &&  */}
+                    {farm.hiresApprentices && 
                         <div className="details__conditional-row">
                             <p className='details__table-text'> Hires Apprentices</p>
                             <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc}/>
                         </div>
-                    {/* } */}
+                    }
                 </div>
                 
                 
