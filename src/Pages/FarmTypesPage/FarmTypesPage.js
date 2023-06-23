@@ -1,16 +1,44 @@
-import './FarmTypes.scss';
+import './FarmTypesPage.scss';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
 
 export default function FarmTypesPage(){
+
+    // function getFruitVegFarms(){
+        
+    //     useEffect(()=>{
+    //         axios
+    //             .get(`http://localhost:8080/categories/farmtype?farmType="`)
+    //             .then((response)=>{setCategory(response.data)
+    //              console.log(response)           
+    //             })
+    //             .catch((error)=>{console.log(error)})
+    //     }, [])
+          
+
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
     return(
         <main className='farmTypes'>
             <section className='farmTypes__section--fruitVegetable'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'></h3>
+                <Link className="farmTypes__link" to='/categories/farmtypes?farmType=fruitVegetable'>
+                    <h3 className='farmTypes__label'>Fruit and Vegetable Farms</h3>
                     {/* <img className='' src='#' alt=''/>  test bg image with descriptive label*/}
                 </Link>
             </section>
             <section className='farmTypes__section--flowerHerb'>
-                <Link className="farmTypes__link">
+                <Link className="farmTypes__link" to="/category/farmtype">
                     <h3 className='farmTypes__label'>Flower and Herb Farms</h3>
                 </Link>
             </section>
@@ -44,8 +72,6 @@ export default function FarmTypesPage(){
                     <h3 className='farmTypes__label'>Indoor Farms and Greehouses</h3>
                 </Link>
             </section>
-
-
 
         </main>
     )

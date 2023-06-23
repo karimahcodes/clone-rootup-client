@@ -4,6 +4,8 @@ import FarmSearchPage from './Pages/FarmSearchPage/FarmSearchPage';
 import SelectedFarmPage from './Pages/SelectedFarmPage/SelectedFarmPage';
 import AboutPage from './Pages/AboutPage/About';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import FarmTypesPage from './Pages/FarmTypesPage/FarmTypesPage';
+import FarmListPage from './Pages/FarmListPage/FarmListPage';
 
 function App() {
 
@@ -20,7 +22,12 @@ function App() {
         <Route path="/browse" element={<FarmSearchPage />} />
         
         <Route path="/About" element={<AboutPage />} />
-        {/* <Route path="/browse/farm-type" element={<FarmCategoryPage category="farmTypes"/>}/> */}
+
+        {/* revisit this and calling from FarmCategory Page instead */}
+        <Route path="/browse/farmtypes" element={<FarmTypesPage/>}/>
+        <Route path="/categories/:category" element={<FarmListPage/>}/>
+
+
         {/* <Route path="/browse/community" element={<FarmCategoryPage category="community"/>}/> */}
         
 
