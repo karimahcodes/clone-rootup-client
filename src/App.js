@@ -19,8 +19,8 @@ function App() {
         <Route path="farms/:farmId" element={<SelectedFarmPage/>} />
 
         <Route path="/browse" element={<FarmSearchPage />} />
-        <Route path="/browse/farm-type" element={<FarmCategoryPage category="farmTypes"/>}/>
-
+        {/* <Route path="/browse/farm-type" element={<FarmCategoryPage category="farmTypes"/>}/> */}
+        {/* <Route path="/browse/community" element={<FarmCategoryPage category="community"/>}/> */}
         
 
         {/* <Route path="/" element={<FarmSearchPage/>} /> 

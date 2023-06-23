@@ -1,0 +1,17 @@
+@use './typography' as *;
+@use './variables' as *;
+
+@mixin CTA-btn {
+    text-decoration: none;
+    background-color: $primary-color;     //placeholder
+    color: white;
+    text-align: center;
+    width: 15rem;
+    padding: .5rem 0;
+    margin: .25rem;                     //placeholder
+    border-radius: 20px;
+        &:hover{
+            background-color: black;
+            color: white
+        }
+}

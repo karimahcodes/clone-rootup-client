@@ -1,6 +1,6 @@
 import './Header.scss';
 import logoSrc from '../../assets/icons/leaf_icon.svg';
-import homeSrc from '../../assets/icons/home_icon.svg';
+import homeSrc from '../../assets/icons/cottage_icon.svg';
 import searchSrc from '../../assets/icons/earth-search_icon.svg';
 import profileSrc from '../../assets/icons/person_icon.svg';
 import { Link } from 'react-router-dom';

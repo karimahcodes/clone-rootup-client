@@ -15,7 +15,7 @@ export default function SelectedFarmPage(){
         navigate(-1) 
     }
     // const apiURL = 'http://localhost:3000/farms/';
-
+/*
     useEffect(()=>{
         axios
             .get(`http://localhost:8080/farms/${farmId}`)
@@ -28,7 +28,7 @@ export default function SelectedFarmPage(){
     }
     // const farm=
     else{
-        return (
+    */    return (
             <div className='farm'>
                 <NavLink onClick={handleClick}> Back to Farm List </NavLink>
                 <img className="farm__banner-image" src={imgSrc} alt="almond orchard" />
@@ -41,7 +41,7 @@ export default function SelectedFarmPage(){
                     <h3 className="farm__farm-name">farm.Name/ of/ Farm </h3>
                 </div>
                 
-                <FarmDetails farm={farm} key={farm.id}/>
+                <FarmDetails /*farm={farm} key={farm.id}*/ />
 
                 <div className='farm__map'>
                     placeholder map
@@ -49,10 +49,10 @@ export default function SelectedFarmPage(){
 
 
                 <div className='farm__CTA-div'>
-                    <Link className='farm__CTA-div--link'>Apply In-App </Link>
+                    <Link className='farm__CTA-div--link'>Apply</Link>
                     <Link className='farm__CTA-div--link'>Website</Link>
                 </div>
             </div>
         )
     }
-}
+// }

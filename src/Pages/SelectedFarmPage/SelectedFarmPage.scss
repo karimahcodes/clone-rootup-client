@@ -20,13 +20,7 @@
         display: flex;
         flex-direction: row;
         &--link{
-            text-decoration: none;
-            background-color: lightblue;    //placeholder
-            width: 8rem;                     //placeholder
-            &:hover{
-                background-color: black;
-                color: white
-            }
+            @include CTA-btn;
 
         }
     }
