@@ -8,29 +8,31 @@ import FarmDetails from '../../Components/FarmDetails/FarmDetails';
 
 
 export default function SelectedFarmPage(){
-    let {farmId}= useParams();
-    let [farm, setFarm] = useState();
-    let navigate = useNavigate() 
-    function handleClick(){ 
+    const {farmId}= useParams();
+    const [farm, setFarm] = useState();
+    let navigate = useNavigate(); 
+    function goBack(){ 
         navigate(-1) 
     }
     // const apiURL = 'http://localhost:3000/farms/';
-/*
+
     useEffect(()=>{
         axios
             .get(`http://localhost:8080/farms/${farmId}`)
-            .then((response)=>{setFarm(response.data)})
+            .then((response)=>{setFarm(response.data)
+            
+            
+            
+            })
             .catch((error)=>{console.log(error)})
     }, [farmId])
         
     if (farm === null) {
         return <h1>Request is loading. If delay persists, please begin your search again by selecting a farm from the previous page.</h1>
-    }
-    // const farm=
-    else{
-    */    return (
+    } else {
+        return (
             <div className='farm'>
-                <NavLink onClick={handleClick}> Back to Farm List </NavLink>
+                <NavLink onClick={goBack}> Back to Farm List </NavLink>
                 <img className="farm__banner-image" src={imgSrc} alt="almond orchard" />
                 {/* imgSrc will be 
                 
@@ -41,7 +43,7 @@ export default function SelectedFarmPage(){
                     <h3 className="farm__farm-name">farm.Name/ of/ Farm </h3>
                 </div>
                 
-                <FarmDetails /*farm={farm} key={farm.id}*/ />
+                <FarmDetails /*farm={farm} key={farm.id} */ />
 
                 <div className='farm__map'>
                     placeholder map
@@ -55,4 +57,4 @@ export default function SelectedFarmPage(){
             </div>
         )
     }
-// }
+}

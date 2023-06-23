@@ -2,7 +2,7 @@ import './FarmDetails.scss';
 import checkSrc from '../../assets/icons/check-verified_icon.svg';
 
 export default function FarmDetails({/* farm props */}){
-    const hires = farms.HiresApprentices;
+    // const hires = farms.HiresApprentices;
 
 
 
@@ -15,7 +15,7 @@ export default function FarmDetails({/* farm props */}){
             </div>
             <div className="details__location">
                 <h3 className="details__text details__text--region">
-                    farm.region
+                    REGION: \farm.region\
                 </h3>
 
                 {/*
@@ -25,23 +25,45 @@ export default function FarmDetails({/* farm props */}){
 
             <div className='details__table'>
                 <div className='details__table-row'>
-                    <h3 className='details__table-row'>Type of Farm</h3> : <h3 className='details__table-row'>farm.farmType, farm.farmType, farm.farmType</h3>
-                
-                {/* actual code:
-
-                */}
+                    <h3 className='details__table-row'>Type of Farm :</h3> <h3 className='details__table-row--regular'>farm.farmType, farm.farmType, farm.farmType</h3>
 
                 </div> 
-
                 <div className='details__table-row'>
-                    {hires && 
+                    {/* {hires &&  */}
+                        <div className="details__conditional-row">
+                            <p className='details__table-text'>farm.qtbipocAffirming </p>
+                            <img className="details__checkbox" src={checkSrc}/>
+                        </div>
+                    {/* } */}                   
+                </div>
+                <div className='details__table-row'>
+                    {/* {hires &&  */}
+                        <div className="details__conditional-row">
+                            <p className='details__table-text'>farm.blackAffirming </p>
+                            <img className="details__checkbox" src={checkSrc}/>
+                        </div>
+                    {/* } */}                   
+                </div>
+                <div className='details__table-row'>
+                    {/* {hires &&  */}
                         <div className="details__conditional-row">
                             <p className='details__table-text'> Hires Apprentices</p>
                             <img className="details__checkbox" src={checkSrc}/>
                         </div>
-                    }
+                    {/* } */}
+                </div>
+                
+                
+                <div className='details__table-row'>
+                    {/* {hires &&  */}
+                        <div className="details__conditional-row">
+                            <p className='details__table-text'> Pays Apprenctices /farm.paidApprenticeship/</p>
+                            <img className="details__checkbox" src={checkSrc}/>
+                        </div>
+                    {/* } */}
                 </div>
 
+                
                 
 
 

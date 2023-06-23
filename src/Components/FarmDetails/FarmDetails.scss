@@ -1,12 +1,12 @@
-/*
-@use '../../assets/mixins.scss' as *;
-@use '../../assets/tupography.scss' as *;
-@use '../../assets/mariabls.scss' as *;
 
-*/
+@use '../../partials/mixins.scss' as *;
+@use '../../partials/typography.scss' as *;
+@use '../../partials/variables.scss' as *;
+
+
 
 .details{
-
+    
     // @include tablet{
 
     // }
@@ -17,4 +17,22 @@
     }
     // &__text{}
     // &__text---location{}
+   
+   
+   
+    &__table-row{
+        @include table-row-flex;
+    }
+    &__conditional-row{
+        @include table-row-flex;
+    }
+    &__table-text{
+        display: inline-block;
+        margin: 0.5rem auto;
+    }
+    &__checkbox{
+        height: 1.5rem;
+        // border: red solid 1px;
+        align-self: center;
+    }
 }
