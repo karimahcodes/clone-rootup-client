@@ -1,7 +1,7 @@
 import './FarmSearchPage.scss';
 import {Link} from 'react-router-dom';
 
-
+//child components: FarmTypesPage, RegionsPage, CommunitiesPage
 
 export default function FarmSearchPage(){
 

@@ -1,47 +1,59 @@
 import './RegionsPage.scss';
+import {Link, NavLink, useNavigate} from 'react-router-dom';
 
-export default function RegionsPage(){
+export default function CommunitiesPage(){
+    let navigate = useNavigate();
+    function goBack() {
+        navigate(-1)
+    }
+
+ 
+    
     return(
         <main className=''>
-            <section className='farmTypes__section--fruitVegetable'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'>x</h3>
+            <NavLink className='farmList__navlink' onClick={goBack}>
+                <img className="farmList__back-arrow" src="" alt="back arrow icon" />Back to Farm List
+            </NavLink>
+        
+            <section className='regions__section--'>
+                <Link className="regions__link">
+                    <h3 className='regions__label'>x</h3>
                     {/* <img className='' src='#' alt=''/>  test bg image with descriptive label*/}
                 </Link>
             </section>
-            <section className='farmTypes__section--flowerHerb'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'>  x </h3>
+            <section className='regions__section--'>
+                <Link className="regions__link">
+                    <h3 className='regions__label'>  x </h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--mushroom'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'>x</h3>
+            <section className='regions__section--'>
+                <Link className="regions__link">
+                    <h3 className='regions__label'>x</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--aquaponicFish'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'>x</h3>
+            <section className='regions__section--'>
+                <Link className="regions__link">
+                    <h3 className='regions__label'>x</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--gardenSmallSpaceRooftopUrban'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'>x</h3>
+            <section className='regions__section--'>
+                <Link className="regions__link">
+                    <h3 className='regions__label'>x</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--beePollinatorInsect'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'>x</h3>
+            <section className='regions__section--'>
+                <Link className="regions__link">
+                    <h3 className='regions__label'>x</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--poultryLivestock'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'>Poultry and Livestock Farms</h3>
+            <section className='regions__section--'>
+                <Link className="regions__link">
+                    <h3 className='regions__label'>x</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--indoorGreenhouse'>
-                <Link className="farmTypes__link">
-                    <h3 className='farmTypes__label'>x</h3>
+            <section className='regions__section--'>
+                <Link className="regions__link">
+                    <h3 className='regions__label'>x</h3>
                 </Link>
             </section>
         </main>

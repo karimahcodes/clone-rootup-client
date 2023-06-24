@@ -1,13 +1,22 @@
 import './FarmTypesPage.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, NavLink } from 'react-router-dom';
 // import { useEffect } from 'react';
 
+//parent component: 
+//child component: farmListPage
 
 export default function FarmTypesPage(){
-
+    let navigate = useNavigate();
+    function goBack() {
+        navigate(-1)
+    }
 
     return(
         <main className='farmTypes'>
+            <NavLink className='farmList__navlink' onClick={goBack}>
+                    <img className="farmList__back-arrow" src="" alt="back arrow icon" />Back to Farm List
+            </NavLink>
+
             <section className='farmTypes__section--fruitVegetable'>
                 <Link className="farmTypes__link" to='/categories/farmtypes?farmType=fruitVegetable'>
                     <h3 className='farmTypes__label'>Fruit and Vegetable Farms</h3>
