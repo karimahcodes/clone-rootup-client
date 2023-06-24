@@ -1,5 +1,5 @@
 import './Header.scss';
-import logoSrc from '../../assets/icons/leaf_icon.svg';
+import logoSrc from '../../assets/logo/rootUP-logo.svg';
 import homeSrc from '../../assets/icons/cottage_icon.svg';
 import searchSrc from '../../assets/icons/earth-search_icon.svg';
 import profileSrc from '../../assets/icons/person_icon.svg';
@@ -11,8 +11,7 @@ export default function Header(){
     return (
         <header className="header">
             <Link className="header__logo-link" to="/About">
-                <img className="header__logo" src={logoSrc}/>
-                <p className='header__logo-text'>rootUP</p>    
+                <img className="header__logo" src={logoSrc}/>                
             </Link>
             <nav className="header__nav">
                 <Link className="header__nav-link--about" to="/About">             

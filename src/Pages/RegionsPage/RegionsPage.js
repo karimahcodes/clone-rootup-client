@@ -9,14 +9,6 @@ export default function CommunitiesPage(){
         navigate(-1)
     }
 
- 
-        
-        // 
-        // 
-        // 
-        // 
-        // 
-        // (US-CAR) Caribbean (Puerto Rico, US Virgin Islands)
     return(
         <main className='regions'>
             <NavLink className='regions__navlink' onClick={goBack}>
