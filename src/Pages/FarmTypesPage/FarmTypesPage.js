@@ -1,6 +1,6 @@
 import './FarmTypesPage.scss';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 
 export default function FarmTypesPage(){
@@ -19,33 +19,33 @@ export default function FarmTypesPage(){
                     <h3 className='farmTypes__label'>Flower and Herb Farms</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--mushroom' to='/categories/farmtypes?farmType=mushroom"'>
-                <Link className="farmTypes__link">
+            <section className='farmTypes__section--mushroom' >
+                <Link className="farmTypes__link" to='/categories/farmtypes?farmType=mushroom'>
                     <h3 className='farmTypes__label'>Mushroom Farms</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--aquaponicFish' to='/categories/farmtypes?farmType=aquaponicFish'>
-                <Link className="farmTypes__link">
+            <section className='farmTypes__section--aquaponicFish'>
+                <Link className="farmTypes__link" to='/categories/farmtypes?farmType=aquaponicFish'>
                     <h3 className='farmTypes__label'>Hydroponic, Aquaponic and Fish Farms</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--gardenSmallSpaceRooftopUrban' to='/categories/farmtypes?farmType=gardenSmallSpaceRooftopUrban'>
-                <Link className="farmTypes__link">
+            <section className='farmTypes__section--gardenSmallSpaceRooftopUrban'>
+                <Link className="farmTypes__link" to='/categories/farmtypes?farmType=gardenSmallSpaceRooftopUrban'>
                     <h3 className='farmTypes__label'>Garden, Small-Space, Rooftop, and Urban Farms</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--beePollinatorInsect' to='/categories/farmtypes?farmType=beePollinatorInsect'>
-                <Link className="farmTypes__link">
+            <section className='farmTypes__section--beePollinatorInsect'>
+                <Link className="farmTypes__link" to='/categories/farmtypes?farmType=beePollinatorInsect'>
                     <h3 className='farmTypes__label'>Bee, Pollinator, and Insect Farm</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--poultryLivestock' to='/categories/farmtypes?farmType=poultryLivestock'>
-                <Link className="farmTypes__link">
+            <section className='farmTypes__section--poultryLivestock'>
+                <Link className="farmTypes__link" to='/categories/farmtypes?farmType=poultryLivestock'>
                     <h3 className='farmTypes__label'>Poultry and Livestock Farms</h3>
                 </Link>
             </section>
-            <section className='farmTypes__section--indoorGreenhouse' to='/categories/farmtypes?farmType=indoorGreenhouse'>
-                <Link className="farmTypes__link">
+            <section className='farmTypes__section--indoorGreenhouse'>
+                <Link className="farmTypes__link" to='/categories/farmtypes?farmType=indoorGreenhouse'>
                     <h3 className='farmTypes__label'>Indoor Farms and Greehouses</h3>
                 </Link>
             </section>

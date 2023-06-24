@@ -2,7 +2,8 @@ import { NavLink, Link, useParams, useSearchParams, useNavigate } from "react-ro
 import axios from 'axios';
 import { useEffect, useState } from "react";
 
-
+//parent components: FarmTypesPage, RegionsPage, CommunitiesPage
+//child component: SelectedFarmPage
 
 export default function FarmListPage() {
     let [searchParams, setSearchParams] = useSearchParams();

@@ -31,7 +31,7 @@ export default function SelectedFarmPage(){
         return (
             <div className='farm'>
                 <NavLink onClick={goBack}> Back to Farm List </NavLink>
-                <img className="farm__banner-image" src={`${imgSrc}`} alt="almond orchard" />
+                <img className="farm__banner-image" src={`${farm.farmImageSource}`} alt="almond orchard" />
                {/* src will be farm.farmImageSource */}
                 
                 <div className='farm__title-div'>
