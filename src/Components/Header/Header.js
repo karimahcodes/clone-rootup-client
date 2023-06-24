@@ -13,20 +13,21 @@ export default function Header(){
             <Link className="header__logo-link" to="/About">
                 <img className="header__logo" src={logoSrc}/>                
             </Link>
+            
             <nav className="header__nav">
-                <Link className="header__nav-link--about" to="/About">             
-                    <img className='header__homeicon'src={homeSrc} alt='icon of a small house with pointed roof'/>
-                    <p className='header__text--about'>About</p>
+                <Link className="header__nav-link header__nav-link--about" to="/About">             
+                    <img className='header__nav-icon header__home-icon'src={homeSrc} alt='icon of a small house with pointed roof'/>
+                    <p className='header__text--about'>Home/ About</p>
                 </Link> 
 {/* decide if a link to all farms at /farms route is needed */}
-                <Link className="header__nav-link--farms" to="/browse">
-                    <img className='header__leafIcon'src={searchSrc} alt='icon of a leaf'/>
-                    <p className='header__text--farms'>Farms</p>
+                <Link className="header__nav-link header__nav-link--farms" to="/browse">
+                    <img className='header__nav-icon header__leaf-icon'src={searchSrc} alt='icon of a leaf'/>
+                    <p className='header__text--farms'>Browse Farms</p>
                 </Link>
                 
-                <Link className="header__nav-link--user" to="/user">
-                    <img className='header__homeIcon'src={profileSrc} alt='icon of a small person from the shoulders up'/>
-                    <p className='header__text--profile'>Profile</p>
+                <Link className="header__nav-link header__nav-link--user" to="/user">
+                    <img className='header__nav-icon header__user-icon'src={profileSrc} alt='icon of a small person from the shoulders up'/>
+                    <p className='header__text--profile'>User Profile</p>
                 </Link>
             </nav>
 

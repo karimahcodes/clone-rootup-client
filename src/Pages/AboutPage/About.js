@@ -3,7 +3,7 @@ import './About.scss';
 export default function About(){
     return(
         <div className='about'>
-            <h2>About the rootUP app</h2>
+            <h2>About rootUP</h2>
             <p></p>
 
             <section className='section'>
