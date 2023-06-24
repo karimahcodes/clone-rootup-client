@@ -1,5 +1,6 @@
 import './FarmTypesPage.scss';
 import { Link, useNavigate, NavLink } from 'react-router-dom';
+import backArrow from '../../assets/icons/arrow-back_icon.svg';
 // import { useEffect } from 'react';
 
 //parent component: 
@@ -14,7 +15,7 @@ export default function FarmTypesPage(){
     return(
         <main className='farmTypes'>
             <NavLink className='farmList__navlink' onClick={goBack}>
-                    <img className="farmList__back-arrow" src="" alt="back arrow icon" />Back to Farm List
+                    <img className="farmList__back-arrow" src={backArrow} alt="back arrow icon" />Back to Search Categories
             </NavLink>
 
             <section className='farmTypes__section--fruitVegetable'>

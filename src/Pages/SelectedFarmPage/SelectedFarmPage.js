@@ -2,9 +2,12 @@ import { Link, NavLink, useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './SelectedFarmPage.scss';
+import backArrow from '../../assets/icons/arrow-back_icon.svg';
 // temporarily importing instead of doing axios call
 import imgSrc from '../../assets/images/almond-orchard.jpg';
 import FarmDetails from '../../Components/FarmDetails/FarmDetails';
+
+//Parent Component: FarmListPage
 
 
 export default function SelectedFarmPage(){
@@ -30,7 +33,9 @@ export default function SelectedFarmPage(){
     } else {
         return (
             <div className='farm'>
-                <NavLink onClick={goBack}> Back to Farm List </NavLink>
+                <NavLink className='farm__navlink' onClick={goBack}>
+                    <img className="farm__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
+                </NavLink>
                 <img className="farm__banner-image" src={`${farm.farmImageSource}`} alt="almond orchard" />
                {/* src will be farm.farmImageSource */}
                 

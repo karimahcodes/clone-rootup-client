@@ -1,6 +1,7 @@
 import { NavLink, Link, useParams, useSearchParams, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { useEffect, useState } from "react";
+import backArrow from '../../assets/icons/arrow-back_icon.svg';
 
 //parent components: FarmTypesPage, RegionsPage, CommunitiesPage
 //child component: SelectedFarmPage
@@ -33,7 +34,7 @@ export default function FarmListPage() {
         return (
             <div className='farmList'>
                 <NavLink className='farmList__navlink' onClick={goBack}>
-                    <img className="farmList__back-arrow" src="" alt="back arrow icon" />Back to Farm List
+                    <img className="farmList__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
                 </NavLink>
 
                 <ul className="farmList__list">
