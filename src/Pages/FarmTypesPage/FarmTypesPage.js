@@ -3,8 +3,8 @@ import { Link, useNavigate, NavLink } from 'react-router-dom';
 import backArrow from '../../assets/icons/arrow-back_icon.svg';
 // import { useEffect } from 'react';
 
-//parent component: 
-//child component: farmListPage
+//parent component: FarmSearchPage
+//child component: ParmListPage
 
 export default function FarmTypesPage(){
     let navigate = useNavigate();

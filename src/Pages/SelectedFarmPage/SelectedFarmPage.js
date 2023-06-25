@@ -13,7 +13,7 @@ import FarmDetails from '../../Components/FarmDetails/FarmDetails';
 export default function SelectedFarmPage(){
     const {farmId}= useParams();
     // const farmImageSource = farm.farmImageSource
-    const [farm, setFarm] = useState({});
+    const [farm, setFarm] = useState(null);
     let navigate = useNavigate(); 
     function goBack(){ 
         navigate(-1) 
@@ -23,6 +23,7 @@ export default function SelectedFarmPage(){
         axios
             .get(`http://localhost:8080/farms/${farmId}`)
             .then((response)=>{setFarm(response.data)
+            
              console.log(response)           
             })
             .catch((error)=>{console.log(error)})
@@ -52,7 +53,7 @@ export default function SelectedFarmPage(){
 
                 <div className='farm__CTA-div'>
                     <Link to='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link'>Apply</Link>
-                    <Link to='https://www.google.com' className='farm__CTA-div--link'>Website</Link>
+                    <a href={`http://${farm.contactInfo.website}`} className='farm__CTA-div--link' target="_blank">Website</a>
                 </div>
             </div>
         )
