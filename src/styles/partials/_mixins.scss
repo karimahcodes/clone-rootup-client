@@ -1,6 +1,28 @@
 @use './typography' as *;
 @use './variables' as *;
 
+
+//mobile responsive mixin
+@mixin mobile {
+    @media (min-width: $mobile-width) {
+        @content;
+    }
+}
+
+//tablet responsive mixin
+@mixin tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+//desktop responsive mixin
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
+
 @mixin CTA-btn {
     text-decoration: none;
     background-color: $primary-color;     //placeholder

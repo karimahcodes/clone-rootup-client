@@ -1,6 +1,6 @@
-// @use '' as *;
-// @use '' as *;
-// @use ''  as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography' as *;
+@use '../../styles/partials/variables' as *;
 
 
 .header{
@@ -26,20 +26,28 @@
     &__nav{
         display: flex;
         flex-direction: row;
+        height: 3rem;
+        margin: auto 1rem auto .5rem;
+        
     }
     &__text{
         display: inline-block;
         padding-left: 1rem;
+        
     }
-    &__nav-icon{
+    &__nav-icon{    
         padding-right: .5rem;
+        height: 24px;
+        
 
     }
     &__nav-link {
                display: flex;
                flex-direction: row;
-               flex-wrap: nowrap;
-               
+            //    flex-wrap: nowrap;
+               align-items: center;
+               padding-top: 0;
+               border: .01rem solid $primary-color; 
     
         
         &--about{

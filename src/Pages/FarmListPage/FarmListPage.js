@@ -41,7 +41,7 @@ export default function FarmListPage() {
                     {farmList.map((farm) => (
                         <li className="farmList__farm-item">
                             <img className="farmList__image" src={farm.farmImageSource} />
-                            <Link className="farmList__item-link" to='/farms/{farm.id}'>
+                            <Link className="farmList__item-link" to={farm.id} relative="path">
                                 <h3 className="farmList__farmName">{farm.farmName}</h3>
                             </Link>    
                             <p className="farmList__farmRegion">{farm.region}</p>
