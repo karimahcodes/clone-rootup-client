@@ -29,7 +29,7 @@ export default function About(){
                         <li className='section__item'>African Diaspora</li>
                         <li className='section__item'>Asian American Pacific Islander</li>
                         <li className='section__item'>Latin American</li>
-                        <li className='section__item'>"Arab/Middle Eastern/North African</li>
+                        <li className='section__item'>Arab/Middle Eastern/North African</li>
                         <li className='section__item'>Indigenous/Native American</li>
                     </ul>                   
                 </section>

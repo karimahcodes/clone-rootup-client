@@ -28,6 +28,7 @@ function App() {
         <Route path="/browse/regions" element={<RegionsPage/>}/>
 
         <Route path="/categories/:category" element={<FarmListPage/>}/>
+        <Route path="/categories/:category/:farmId" element={<SelectedFarmPage/>} />
         <Route path="/farms/:farmId" element={<SelectedFarmPage/>} />
 
         {/* <Route path="/browse/community" element={<FarmCategoryPage category="community"/>}/> */}

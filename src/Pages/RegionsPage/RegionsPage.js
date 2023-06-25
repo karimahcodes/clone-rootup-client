@@ -37,7 +37,7 @@ export default function CommunitiesPage(){
                 </Link>
             </section>
             <section className='regions__section--US-SO'>
-                <Link className="regions__link" to="/categories/regions?region=US-S">
+                <Link className="regions__link" to="/categories/regions?region=US-SO">
                     <h3 className='regions__label'>(US-S) South</h3>
                 </Link>
             </section>

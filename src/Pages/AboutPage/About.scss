@@ -2,6 +2,9 @@
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
+* {
+    font-family: "FireSans-Regular";
+}
 
 .about{
     display: flex;
