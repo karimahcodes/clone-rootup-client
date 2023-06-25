@@ -12,9 +12,10 @@
     // &__program{}
     // &__farm-name{}
     &__map{
-        height: auto;
+        height: 10rem;
         width: 95vw;
-        border-bottom: lightblue; 
+        border-bottom: lightblue;            
+        background-color: grey;
     }
     &__CTA-div{
         display: flex;
@@ -26,10 +27,7 @@
             @include CTA-btn;
             padding: .75rem;
         }
-        &__map{
-            height: 10rem;
-            background-color: grey;
-        }
+        
     }
 
 

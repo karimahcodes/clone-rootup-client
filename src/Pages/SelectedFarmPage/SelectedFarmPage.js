@@ -37,17 +37,18 @@ export default function SelectedFarmPage(){
                 <NavLink className='farm__navlink' onClick={goBack}>
                     <img className="farm__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
                 </NavLink>
+
                 <img className="farm__banner-image" src={`${farm.farmImageSource}`} alt="almond orchard" />
-               {/* src will be farm.farmImageSource */}
                 
                 <div className='farm__title-div'>
                     <h2 className='farm__program'>{`${farm.programName}`}</h2>
                     <h3 className="farm__farm-name">{`${farm.farmName}`} </h3>
                 </div>
+
                 <FarmDetails farm={farm} key={farm.id}  />
 
                 <div className='farm__map'>
-                    placeholder map
+                    placeholder map of region or farm
                 </div>
 
 
