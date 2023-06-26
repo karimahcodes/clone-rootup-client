@@ -40,9 +40,9 @@ export default function SelectedFarmPage(){
                 <NavLink className='farm__navlink' onClick={goBack}>
                     <img className="farm__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
                 </NavLink>
-                
+
                 <div className='farm__details-body'>
-                    <img className="farm__banner-image" src={`${farm.farmImageSource}`} alt="almond orchard" />
+                    <img className="farm__banner-image" src={`../assets/images/farm-images${farmImageSource}`} alt="almond orchard" />
                     
                     <div className='farm__title-div'>
                         <h2 className='farm__program'>{`${farm.programName}`}</h2>
