@@ -101,15 +101,15 @@ export default function FarmDetails({ farm }) {
                     <h3 className='details__row-header'>Program Ownership or Leadership</h3>
                     <div className='details__table-row--regular'>
                         {Object.keys(farm.ownership).map((key) => (
-                            <p className='details__farm-type'>{farm.ownership[key]},</p>
+                            <p className='details__farm-type'>{farm.ownership[key]}</p>
                         ))}
+                         {/* {Object.keys(farm.ownership).map((key) => if (farm.ownership[key] === qtbipocOwnedOrLed) {( <p className='details__farm-type'>QTBIPOC Owned or Led</p>
+                         )})} */}
                         </div> 
                             
                 </div>
 
-
-
-                    {/* ***COSTS*** */}
+                {/* ***COSTS*** */}
                 <div className='details__table-row'>
                     <h3 className='details__row-header'>Costs and Considerations:</h3>
                     {farm.hiresApprentices ?
@@ -141,6 +141,15 @@ export default function FarmDetails({ farm }) {
                         </div>
                     }
                 </div>
+                {/** *FORMAT* **/}
+                <div className='details__table-row--regular'>
+                        {Object.keys(farm.programFormat).map((key) => (
+                            <div>
+                                <h4> Format of this Program</h4> <p className='details__farm-type'> {farm.programFormat[key]}</p>
+                            </div>
+                        ))}
+                </div>
+                
                 <div className='details__table-row'>
                     <p className='details__table-text'>Accessibility Accommodation notes: {farm.accessibility}</p>
                 </div>
