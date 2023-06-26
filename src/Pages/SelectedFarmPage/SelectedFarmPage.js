@@ -18,7 +18,7 @@ export default function SelectedFarmPage(){
     function goBack(){ 
         navigate(-1) 
     }
-
+    
     useEffect(()=>{
         axios
             .get(`http://localhost:8080/farms/${farmId}`)
@@ -28,35 +28,40 @@ export default function SelectedFarmPage(){
             })
             .catch((error)=>{console.log(error)})
     }, [farmId])
-        
+      
     if (farm === null) {
         return <h1>Request is loading. If delay persists, please begin your search again by selecting a farm from the previous page.</h1>
     } else {
+        
+        const farmImageSource = farm.farmImageSource;
+
         return (
-            <div className='farm'>
+            <main className='farm'>
                 <NavLink className='farm__navlink' onClick={goBack}>
                     <img className="farm__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
                 </NavLink>
-
-                <img className="farm__banner-image" src={`${farm.farmImageSource}`} alt="almond orchard" />
                 
-                <div className='farm__title-div'>
-                    <h2 className='farm__program'>{`${farm.programName}`}</h2>
-                    <h3 className="farm__farm-name">{`${farm.farmName}`} </h3>
+                <div className='farm__details-body'>
+                    <img className="farm__banner-image" src={`${farm.farmImageSource}`} alt="almond orchard" />
+                    
+                    <div className='farm__title-div'>
+                        <h2 className='farm__program'>{`${farm.programName}`}</h2>
+                        <h3 className="farm__farm-name">{`${farm.farmName}`} </h3>
+                    </div>
+
+                    <FarmDetails farm={farm} key={farm.id}  />
+
+                    <div className='farm__map'>
+                        placeholder map of region or farm
+                    </div>
+
+
+                    <div className='farm__CTA-div'>
+                        <Link to='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link'>Apply</Link>
+                        <a href={`http://${farm.contactInfo.website}`} className='farm__CTA-div--link' target="_blank">Website</a>
+                    </div>
                 </div>
-
-                <FarmDetails farm={farm} key={farm.id}  />
-
-                <div className='farm__map'>
-                    placeholder map of region or farm
-                </div>
-
-
-                <div className='farm__CTA-div'>
-                    <Link to='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link'>Apply</Link>
-                    <a href={`http://${farm.contactInfo.website}`} className='farm__CTA-div--link' target="_blank">Website</a>
-                </div>
-            </div>
+            </main>
         )
     }
 }
