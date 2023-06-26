@@ -24,12 +24,15 @@
         flex-direction: column;
         // border: blue 2px solid;
     }
-    &__table-row{
+    &__table-row--regular{
         text-align: center;
 
     }
     &__row-header{
         align-self: center;
+        @include tablet{
+            align-self: flex-start;
+        }
     }
 
     &__farm-type{
