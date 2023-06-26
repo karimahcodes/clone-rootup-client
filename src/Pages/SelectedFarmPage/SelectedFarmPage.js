@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './SelectedFarmPage.scss';
 import backArrow from '../../assets/icons/arrow-back_icon.svg';
-// temporarily importing instead of doing axios call
-import imgSrc from '../../assets/images/farm-images/almond-orchard.jpg';
 import FarmDetails from '../../Components/FarmDetails/FarmDetails';
 
 //Parent Component: FarmListPage
