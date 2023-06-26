@@ -63,7 +63,7 @@ export default function FarmDetails({ farm }) {
                             <p className='details__farm-type'>Black / African Diaspora</p>}
 
                         {farm.communityType.includes('aapi') &&
-                            <p className='details__farm-type'>Asian American /Pacific Islander</p>}
+                            <p className='details__farm-type'>Asian American / Pacific Islander</p>}
 
                         {farm.communityType.includes('latinAmerican') &&
                             <p className='details__farm-type'>Latin American</p>}

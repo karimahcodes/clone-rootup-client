@@ -9,8 +9,9 @@
 .about{
     display: flex;
     flex-direction: column;
+
     &__hero-image{
-        background-image: cover 100% url(../../assets/images/site-images/lavender-farm.jpg);
+        background: 100% url(../../assets/images/site-images/lavender-farm.jpg);
         height: 8rem;
       
     }
