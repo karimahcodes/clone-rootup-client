@@ -17,21 +17,55 @@
     // &__text{}
     // &__text---location{}
    
-   
-   
+
     &__table-row{
-        @include table-row-flex;
+        // @include table-row-flex;
+        display: flex;
+        flex-direction: column;
+        // border: blue 2px solid;
     }
+    &__table-row{
+        text-align: center;
+
+    }
+    &__row-header{
+        align-self: center;
+    }
+
+    &__farm-type{
+        color: $primary-color;
+        font-weight: 800;
+    }
+
     &__conditional-row{
-        @include table-row-flex;
+        // @include table-row-flex;
+        display: flex;
+        flex-direction: row;
+        
+        // border: red 2px solid;
+        justify-content: space-evenly;
+        align-items: center;
     }
+    
     &__table-text{
         display: inline-block;
         margin: 0.5rem auto;
     }
+
     &__checkbox{
         height: 1.5rem;
         // border: red solid 1px;
         align-self: center;
+    }
+    &__affirming{
+        font-weight: 700;
+        // @include table-row-flex;
+        
+        justify-content: space-between;
+        @include tablet{
+            justify-content: flex-start;
+        }
+
+
     }
 }
