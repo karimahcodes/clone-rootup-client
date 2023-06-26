@@ -19,6 +19,7 @@ export default function FarmDetails({ farm }) {
                 <img className="details__map" src={regionSrc} alt="map of farm address"/>
                 */}
             </div>
+
             {/* **FARM TYPE** */}
             <div className='details__table-row'>
                 <h3 className='details__row-header'>Type of Farm:</h3>
@@ -94,6 +95,20 @@ export default function FarmDetails({ farm }) {
                     }
                 </div>
 
+                {/*  **OWNERSHIP** */}
+                <div className='details__table-row'>
+                    <p className='details__table-text'>  </p>
+                    <h3 className='details__row-header'>Program Ownership or Leadership</h3>
+                    <div className='details__table-row--regular'>
+                        {Object.keys(farm.ownership).map((key) => (
+                            <p className='details__farm-type'>{farm.ownership[key]},</p>
+                        ))}
+                        </div> 
+                            
+                </div>
+
+
+
                     {/* ***COSTS*** */}
                 <div className='details__table-row'>
                     <h3 className='details__row-header'>Costs and Considerations:</h3>
@@ -117,9 +132,7 @@ export default function FarmDetails({ farm }) {
                 <div className='details__table-row'>
                     <p className='details__table-text'>Program Fees (if applicable): ${farm.programFee}</p>
                 </div>
-                <div className='details__table-row'>
-                    <p className='details__table-text'>Accessibility Accommodation notes: {farm.Accessibility}</p>
-                </div>
+
                 <div className='details__table-row'>
                     {farm.lodgingAvailable &&
                         <div className="details__conditional-row">
@@ -128,10 +141,15 @@ export default function FarmDetails({ farm }) {
                         </div>
                     }
                 </div>
+                <div className='details__table-row'>
+                    <p className='details__table-text'>Accessibility Accommodation notes: {farm.accessibility}</p>
+                </div>
+
 
             </div>
 
-
-        </main>
-    )
+                <p className='details__contact-info'>{farm.contactInfo.phone} {farm.contactInfo.address}</p>
+        </main>    
+        
+        )
 }
