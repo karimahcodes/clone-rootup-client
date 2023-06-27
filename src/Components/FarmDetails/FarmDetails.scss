@@ -22,7 +22,7 @@
         // @include table-row-flex;
         display: flex;
         flex-direction: column;
-        // border: blue 2px solid;
+        border-top: $primary-highlight .025rem solid;
     }
     &__table-row--regular{
         text-align: center;

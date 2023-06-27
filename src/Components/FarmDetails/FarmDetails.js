@@ -157,7 +157,9 @@ export default function FarmDetails({ farm }) {
 
             </div>
 
-                <p className='details__contact-info'>{farm.contactInfo.phone} {farm.contactInfo.address}</p>
+                <p className='details__contact-info'>Street Address: {farm.contactInfo.address}</p>
+                <p className='details__contact-info'>Phone: {farm.contactInfo.phone}</p>
+                
         </main>    
         
         )

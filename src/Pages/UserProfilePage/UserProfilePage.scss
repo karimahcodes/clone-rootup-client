@@ -6,5 +6,8 @@
 .user{
     display: flex;
     flex-direction: column;
+    &__image{
+        @include profile-hero-image;
+    }
 
 }

@@ -50,7 +50,7 @@ export default function SelectedFarmPage(){
                     <FarmDetails farm={farm} key={farm.id}  />
 
                     <div className='farm__map'>
-                        placeholder map of region or farm
+                       
                     </div>
 
 

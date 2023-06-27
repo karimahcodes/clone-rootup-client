@@ -8,6 +8,7 @@ import FarmTypesPage from './Pages/FarmTypesPage/FarmTypesPage';
 import FarmListPage from './Pages/FarmListPage/FarmListPage';
 import CommunitiesPage from './Pages/CommunitiesPage/CommunitiesPage';
 import RegionsPage from './Pages/RegionsPage/RegionsPage';
+import UserProfilePage from './Pages/UserProfilePage/UserProfilePage';
 
 function App() {
 
@@ -31,8 +32,10 @@ function App() {
         <Route path="/categories/:category/:farmId" element={<SelectedFarmPage/>} />
 
         <Route path="/farms/:farmId" element={<SelectedFarmPage/>} />       
+        <Route path="/user" element={<UserProfilePage/>} />
         {/* <Route path="/farms" element={<FarmCategoryPage/>} />
          */}
+
       </Routes>
     </BrowserRouter>
   );
