@@ -3,34 +3,70 @@
 @use '../../styles/partials/variables' as *;
 
 .farm {
-    &__banner-image{
 
-    width: 95vw;
+    &__navlink {
+        display: flex;
+        text-decoration: none;
+        
+        align-items: center;
+        margin: .5rem 1rem;
+        color: $primary-color;
+        font-weight: 700;
+        font-family: "FireSans-Italic", Arial, Helvetica, sans-serif;
     }
 
-    // &__title-div{}
-    // &__program{}
-    // &__farm-name{}
-    &__map{
+    // &__back-arrow{}
+
+    &__details-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__banner-image {
+        @include profile-hero-image;
+        // width: 95vw;
+    }
+
+    &__title-div{
+        color: white;
+        background-color: $primary-highlight;
+        width: 24rem;
+        border-radius: 0 0 1.5rem 1.5rem ;
+    }
+    &__program-name {
+        font-size: 1.25rem;
+        margin: .5rem .75rem;
+    }
+
+    &__farm-name {
+        font-family: "FireSans-Italic";
+        font-size: 1rem;
+        margin: .5rem .75rem;
+    }
+
+    &__map {
         height: 10rem;
         width: 95vw;
-        border-bottom: lightblue;            
+        border-bottom: lightblue;
         background-color: grey;
         background-image: url(../../assets/images/category-images/region-images/map-placeholder.svg);
         background-position: center;
         background-size: cover;
     }
-    &__CTA-div{
+
+    &__CTA-div {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;        
+        justify-content: space-evenly;
         width: 100%;
 
-        &--link{
+        &--link {
             @include CTA-btn;
             padding: .75rem;
         }
-        
+
     }
 
 

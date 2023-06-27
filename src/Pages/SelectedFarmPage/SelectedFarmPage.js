@@ -1,7 +1,8 @@
+import './SelectedFarmPage.scss';
 import { Link, NavLink, useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import './SelectedFarmPage.scss';
+
 import backArrow from '../../assets/icons/arrow-back_icon.svg';
 import FarmDetails from '../../Components/FarmDetails/FarmDetails';
 
@@ -43,21 +44,20 @@ export default function SelectedFarmPage(){
                     <img className="farm__banner-image" src={`http://localhost:8080/assets/images/${farmImageSource}`} alt="almond orchard" />
                     
                     <div className='farm__title-div'>
-                        <h2 className='farm__program'>{`${farm.programName}`}</h2>
-                        <h3 className="farm__farm-name">{`${farm.farmName}`} </h3>
+                        <h1 className='farm__program-name'>{`${farm.programName}`}</h1>
+                        <h2 className="farm__farm-name">{`${farm.farmName}`} </h2>
                     </div>
 
                     <FarmDetails farm={farm} key={farm.id}  />
 
                     <div className='farm__map'>
-                       
                     </div>
-
 
                     <div className='farm__CTA-div'>
                         <Link to='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link'>Apply</Link>
                         <a href={`http://${farm.contactInfo.website}`} className='farm__CTA-div--link' target="_blank">Website</a>
                     </div>
+
                 </div>
             </main>
         )
