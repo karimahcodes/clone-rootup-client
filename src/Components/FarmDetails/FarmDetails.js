@@ -100,11 +100,18 @@ export default function FarmDetails({ farm }) {
                     <p className='details__table-text'>  </p>
                     <h3 className='details__row-header'>Program Ownership or Leadership</h3>
                     <div className='details__table-row--regular'>
+                        {farm.ownership.includes('qtbipocOwnedOrLed') &&
+                            <p className='details__farm-type'>QTBIPOC Owned or Led</p>}
+                        {farm.ownership.includes('blackOwnedOrLed') &&
+                            <p className='details__farm-type'>Black Owned or Led</p>}
+
+                        {/*
                         {Object.keys(farm.ownership).map((key) => (
                             <p className='details__farm-type'>{farm.ownership[key]}</p>
                         ))}
                          {/* {Object.keys(farm.ownership).map((key) => if (farm.ownership[key] === qtbipocOwnedOrLed) {( <p className='details__farm-type'>QTBIPOC Owned or Led</p>
                          )})} */}
+
                         </div> 
                             
                 </div>
@@ -112,16 +119,29 @@ export default function FarmDetails({ farm }) {
                 {/* ***COSTS*** */}
                 <div className='details__table-row'>
                     <h3 className='details__row-header'>Costs and Considerations:</h3>
-                    {farm.hiresApprentices ?
+                    {/* {farm.hiresApprentices ?
                         <div className="details__conditional-row">
-                            <p className='details__table-text'>Hires Apprentices (after program) </p>
+                            <p className='details__table-text'>Hires Apprentices (after program): </p>
                             <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc} />
                         </div> : 
                         <p className='details__header-response'>Hires Apprentices (after program): no</p>
-                    } 
+                    }  */}
+
+                    {farm.cost.programFee === 0.00 ? 
+	                    <div className='details__table-row--nofee'>    
+			               <p className='details__table-text'>Program Fees (if applicable)-  FREE</p> 
+			               </div> : 
+			                    
+			                    <div className='details__table-row--fee'>   
+			                        <p className='details__table-text'>Program Fees (if applicable): ${farm.cost.programFee}</p>                        
+			                    </div>
+			                }
+
                         {/* </div>
 
                         <div className='details__table-row'> */}
+
+                {/*** PAYS***/}
                     {farm.paidApprenticeship &&
                         <div className="details__conditional-row">
                             <p className='details__table-text'> Pays Apprenctices </p>
@@ -129,10 +149,13 @@ export default function FarmDetails({ farm }) {
                         </div>
                     }
                 </div>
+                {/*** FEES***/}
+
                 <div className='details__table-row'>
-                    <p className='details__table-text'>Program Fees (if applicable): ${farm.programFee}</p>
+                    <p className='details__table-text'>Program Fees (if applicable): ${`${farm.programFee}`}</p>
                 </div>
 
+                {/*** LODGING***/}
                 <div className='details__table-row'>
                     {farm.lodgingAvailable &&
                         <div className="details__conditional-row">
@@ -143,15 +166,16 @@ export default function FarmDetails({ farm }) {
                 </div>
                 {/** *FORMAT* **/}
                 <div className='details__table-row--regular'>
-                        {Object.keys(farm.programFormat).map((key) => (
-                            <div>
-                                <h4> Format of this Program</h4> <p className='details__farm-type'> {farm.programFormat[key]}</p>
+                    <h4> Format of this Program</h4> 
+                    {Object.keys(farm.programFormat).map((key) => (
+                                <div>
+                               <p className='details__farm-type'> {farm.programFormat[key]}</p>
                             </div>
                         ))}
                 </div>
                 
                 <div className='details__table-row'>
-                    <p className='details__table-text'>Accessibility Accommodation notes: {farm.accessibility}</p>
+                    <p className='details__table-text'><span id="bold">Accessibility Accommodation notes:</span> {farm.accessibility}</p>
                 </div>
 
 

@@ -36,7 +36,7 @@ export default function FarmListPage() {
 
             <div className='farmList'>
                 <NavLink className='farmList__navlink' onClick={goBack}>
-                    <img className="farmList__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
+                    <img className="farmList__back-arrow" src={backArrow} alt="back arrow icon" />Back to Subcategory List
                 </NavLink>
 
                 <ul className="farmList__list">

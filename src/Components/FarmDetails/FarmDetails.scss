@@ -24,6 +24,7 @@
         flex-direction: column;
         border-top: $primary-highlight .025rem solid;
     }
+
     &__table-row--regular{
         text-align: center;
 
@@ -46,16 +47,32 @@
         flex-direction: row;
         
         // border: red 2px solid;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
     }
     
     &__table-text{
         display: inline-block;
         margin: 0.5rem auto;
+        padding: .5rem;
     }
-
+    &__table-row--nofee{
+        background-color: $dark-primary;
+        color: white;
+        text-align: center;
+    }
+    // &__table-text--nofee{
+       
+    // }
+    &__table-row--fee{
+        background-color: $RU_grey;
+        color:white;
+        font-weight: 700;
+        text-align: center;
+    }
+    
     &__checkbox{
         height: 1.5rem;
         // border: red solid 1px;
@@ -72,4 +89,9 @@
 
 
     }
+    #bold{
+        font-weight: 700;
+    }
+
+
 }
