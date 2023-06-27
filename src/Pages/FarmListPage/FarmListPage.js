@@ -1,3 +1,4 @@
+import './FarmListPage.scss';
 import { NavLink, Link, useParams, useSearchParams, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { useEffect, useState } from "react";
@@ -32,7 +33,7 @@ export default function FarmListPage() {
     } else {
 
         return (
-            
+
             <div className='farmList'>
                 <NavLink className='farmList__navlink' onClick={goBack}>
                     <img className="farmList__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
@@ -43,13 +44,14 @@ export default function FarmListPage() {
 
                         <li className="farmList__farm-item">
                             <img className="farmList__image" src={`http://localhost:8080/assets/images/${farm.farmImageSource}`} alt="farmer photo" />
-                            <Link className="farmList__item-link" to={farm.id} relative="path">
-                                <h3 className="farmList__farmName">{farm.farmName}</h3>
-                            </Link>    
-                            <p className="farmList__farmRegion">{farm.region}</p>
-                            
+                            <div className='farmList__link-region'>
+                                <Link className="farmList__item-link" to={farm.id} relative="path">
+                                    <h3 className="farmList__farmName">{farm.farmName}</h3>
+                                </Link>
+                                <p className="farmList__farmRegion"><span className='farmList__span'>Region:</span> {farm.region}</p>
+                            </div>
                         </li>
-                        
+
                     ))}
                 </ul>
 
