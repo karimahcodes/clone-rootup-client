@@ -1,3 +1,29 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
+
+.regions{
+    &__navlink {
+        display: flex;
+        text-decoration: none;
+        
+        align-items: center;
+        margin: .5rem 1rem;
+        color: $primary-color;
+        font-weight: 700;
+        font-family: "FireSans-Italic", Arial, Helvetica, sans-serif;
+    }
+
+    // &__section--fruitVegetable{
+    //     // background-image: url() ;
+    //     background-position: cover;
+    // }
+    &__link{
+        text-decoration: none;
+        // margin: 0 .5rem;
+    }
+    &__link:hover{
+        text-decoration: underline dotted $primary-highlight;
+    }
+
+}
