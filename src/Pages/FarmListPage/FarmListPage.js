@@ -17,7 +17,7 @@ export default function FarmListPage() {
     }
 
     useEffect(() => {
-        console.log(searchParams.toString())
+        // console.log(searchParams.toString())
         axios
             .get(`http://localhost:8080/categories/${category}?${searchParams.toString()}`)
             .then((response) => {
@@ -32,6 +32,7 @@ export default function FarmListPage() {
     } else {
 
         return (
+            
             <div className='farmList'>
                 <NavLink className='farmList__navlink' onClick={goBack}>
                     <img className="farmList__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
@@ -39,8 +40,9 @@ export default function FarmListPage() {
 
                 <ul className="farmList__list">
                     {farmList.map((farm) => (
+
                         <li className="farmList__farm-item">
-                            <img className="farmList__image" src={farm.farmImageSource} />
+                            <img className="farmList__image" src={`http://localhost:8080/assets/images/${farm.farmImageSource}`} alt="farmer photo" />
                             <Link className="farmList__item-link" to={farm.id} relative="path">
                                 <h3 className="farmList__farmName">{farm.farmName}</h3>
                             </Link>    
