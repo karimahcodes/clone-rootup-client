@@ -19,7 +19,7 @@ function App() {
       <Routes>
         
         <Route path="/About" element={<AboutPage />} />
-        <Route path="/" element={<SelectedFarmPage/>} />
+        <Route path="/" element={<AboutPage/>} />
 
         {/* revisit this and calling from FarmCategory Page instead */}
         
