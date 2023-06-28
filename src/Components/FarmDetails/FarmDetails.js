@@ -48,46 +48,46 @@ export default function FarmDetails({ farm }) {
 
             {/* **COMMUNITIES OF FOCUS** */}
             <div className='details__table-row'>
-                    <h3 className='details__row-header'>Communities of Focus At This Farm</h3>
-                    <div className='details__table-row--regular'>
-                        {farm.communityType.includes('qtbipoc') &&
-                            <p className='details__farm-type'>QTBIPOC</p>}
+                <h3 className='details__row-header'>Communities of Focus At This Farm</h3>
+                <div className='details__table-row--regular'>
+                    {farm.communityType.includes('qtbipoc') &&
+                        <p className='details__farm-type'>QTBIPOC</p>}
 
-                        {farm.communityType.includes('africanDiaspora') &&
-                            <p className='details__farm-type'>Black / African Diaspora</p>}
+                    {farm.communityType.includes('africanDiaspora') &&
+                        <p className='details__farm-type'>Black / African Diaspora</p>}
 
-                        {farm.communityType.includes('aapi') &&
-                            <p className='details__farm-type'>Asian American / Pacific Islander</p>}
+                    {farm.communityType.includes('aapi') &&
+                        <p className='details__farm-type'>Asian American / Pacific Islander</p>}
 
-                        {farm.communityType.includes('latinAmerican') &&
-                            <p className='details__farm-type'>Latin American</p>}
+                    {farm.communityType.includes('latinAmerican') &&
+                        <p className='details__farm-type'>Latin American</p>}
 
-                        {farm.communityType.includes('arabMENA') &&
-                            <p className='details__farm-type'>Arab / Middle Eastern / North African</p>}
+                    {farm.communityType.includes('arabMENA') &&
+                        <p className='details__farm-type'>Arab / Middle Eastern / North African</p>}
 
-                        {farm.communityType.includes('nativeAmerican') &&
-                            <p className='details__farm-type'>Indigenous / Native American</p>}
-                    </div>
+                    {farm.communityType.includes('nativeAmerican') &&
+                        <p className='details__farm-type'>Indigenous / Native American</p>}
+                </div>
             </div>
             <div className='details__table'>
 
-            {/* ***SPECIAL PROGRAMMING*** */}
-            <div className='details__table-row details__affirming'>
-            <h3 className='details__row-header'>Notes on Special Programming:</h3>
-                {farm.qtbipocAffirming &&
-                    <div className="details__conditional-row">
-                        <p className='details__table-text'>QTBIPOC Affirming </p>
-                        <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc} />
-                    </div>
-                }                   
+                {/* ***SPECIAL PROGRAMMING*** */}
+                <div className='details__table-row details__affirming'>
+                    <h3 className='details__row-header'>Notes on Special Programming:</h3>
+                    {farm.qtbipocAffirming &&
+                        <div className="details__conditional-row">
+                            <p className='details__table-text'>QTBIPOC Affirming </p>
+                            <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc} />
+                        </div>
+                    }
 
                     {farm.blackAffirming &&
-                    <div className="details__conditional-row">
-                        <p className='details__table-text'>Black Affirming </p>
-                        <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc} />
-                    </div>
-                }
-            </div>
+                        <div className="details__conditional-row">
+                            <p className='details__table-text'>Black Affirming </p>
+                            <img className="details__checkbox" alt="checkbox badge icon" src={checkSrc} />
+                        </div>
+                    }
+                </div>
 
                 {/*  **OWNERSHIP** */}
                 <div className='details__table-row'>
@@ -98,26 +98,25 @@ export default function FarmDetails({ farm }) {
                             <p className='details__farm-type'>QTBIPOC Owned or Led</p>}
                         {farm.ownership.includes('blackOwnedOrLed') &&
                             <p className='details__farm-type'>Black Owned or Led</p>}
-                        </div> 
-                            
+                    </div>
+
                 </div>
 
                 {/* ***COSTS*** */}
                 <div className='details__table-row'>
                     <h3 className='details__row-header'>Costs and Considerations:</h3>
-                    {farm.cost.programFee === 0.00 ? 
-	                    <div className='details__table-row--nofee'>    
-			               <p className='details__table-text'>Program Fees (if applicable)-  FREE</p> 
-			               </div> : 
-			                    
-			                    <div className='details__table-row--fee'>   
-			                        <p className='details__table-text'>Program Fees (if applicable): ${farm.cost.programFee}</p>                        
-			                    </div>
-			                }
+                     {/*** FEES***/}
+                     {farm.cost.programFee === 0.00 ?
+                        <div className='details__table-row--nofee'>
+                            <p className='details__table-text'>Program Fees (if applicable):  FREE</p>
+                        </div> : <div className='details__table-row--fee'>
+                            <p className='details__table-text'>Program Fees (if applicable): ${farm.cost.programFee}</p>
+                        </div>
+                    }
 
-                    
 
-                {/*** PAYS***/}
+
+                    {/*** PAYS***/}
                     {farm.paidApprenticeship &&
                         <div className="details__conditional-row">
                             <p className='details__table-text'> Pays Apprenctices </p>
@@ -125,11 +124,8 @@ export default function FarmDetails({ farm }) {
                         </div>
                     }
                 </div>
-                {/*** FEES***/}
+               
 
-                <div className='details__table-row'>
-                    <p className='details__table-text'>Program Fees (if applicable): ${`${farm.programFee}`}</p>
-                </div>
 
                 {/*** LODGING***/}
                 <div className='details__table-row'>
@@ -142,14 +138,14 @@ export default function FarmDetails({ farm }) {
                 </div>
                 {/** *FORMAT* **/}
                 <div className='details__table-row--regular'>
-                    <h4> Format of this Program</h4> 
+                    <h4> Format of this Program</h4>
                     {Object.keys(farm.programFormat).map((key) => (
-                                <div>
-                               <p className='details__farm-type'> {farm.programFormat[key]}</p>
-                            </div>
-                        ))}
+                        <div>
+                            <p className='details__farm-type'> {farm.programFormat[key]}</p>
+                        </div>
+                    ))}
                 </div>
-                
+
                 <div className='details__table-row'>
                     <p className='details__table-text'><span id="bold">Accessibility Accommodation notes:</span> {farm.accessibility}</p>
                 </div>
@@ -157,10 +153,10 @@ export default function FarmDetails({ farm }) {
 
             </div>
 
-                <p className='details__contact-info'>Street Address: {farm.contactInfo.address}</p>
-                <p className='details__contact-info'>Phone: {farm.contactInfo.phone}</p>
-                
-        </main>    
-        
-        )
+            <p className='details__contact-info'>Street Address: {farm.contactInfo.address}</p>
+            <p className='details__contact-info'>Phone: {farm.contactInfo.phone}</p>
+            
+        </main>
+
+    )
 }

@@ -27,7 +27,7 @@ export default function SelectedFarmPage(){
     }, [farmId])
       
     if (farm === null) {
-        return <h1>Request is loading. If delay persists, please begin your search again by selecting a farm from the previous page.</h1>
+        return <h2>Request is loading. If delay persists, please begin your search again by selecting a farm from the previous page.</h2>
     } else {
         
         const farmImageSource = farm.farmImageSource;
