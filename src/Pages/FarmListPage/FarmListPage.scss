@@ -3,6 +3,15 @@
 @use '../../styles/partials/variables' as *;
 
 .farmList{
+    @include tablet{
+        width: 65vw;
+        margin: .25rem auto;
+        border-left: $primary-color solid .025rem;
+        border-right: $primary-color solid .025rem;
+        box-shadow: 0 0 10px rgba($color: $primary-color, $alpha: 1.0);
+        padding: .5rem;
+    }
+
     &__navlink {
         display: flex;
         text-decoration: none;
