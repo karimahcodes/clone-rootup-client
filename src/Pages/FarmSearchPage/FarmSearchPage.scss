@@ -2,12 +2,13 @@
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
-.browse{
+.browse {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include tablet{
+
+    @include tablet {
         width: 65vw;
         margin: 0 auto;
         border-left: $primary-color solid .025rem;
@@ -16,57 +17,89 @@
         padding: .5rem;
     }
 
-    
-    &__section--farmtypes{
+
+    &__section--farmtypes {
         display: flex;
         flex-direction: column;
+        margin: 1rem;
     }
-    &__section--farmtypes-img{
-        background: center/100% no-repeat url(../../assets/images/category-images/farmtype-images/farmtype-card.svg);
+
+    &__section--farmtypes-img {
+        background: center/cover no-repeat url(../../assets/images/category-images/farmtype-images/farmtype-card.svg);
         height: 18rem;
         width: 24rem;
         display: flex;
     }
-    &__link--farmtypes{
-        color: $primary-color;
-        background-color: white;
-        margin-bottom: 3rem;
+
+    &__link--farmtypes {
+        @include link;
+        width: 22.5rem;
+
+        color: white;
+        background-color: $primary-highlight;
+
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding: 0 .75rem;
+        text-align: center;
 
     }
 
-    &__section--communities{
+    &__link--farmtypes:hover {
+        text-decoration: underline white dotted;
+    }
+
+    
+    &__section--communities {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        }
-    &__section--communities-img{
+        // justify-content: flex-end;
+        margin: 1rem;
+    }
+
+    &__section--communities-img {
         background: center/cover no-repeat url(../../assets/images/category-images/community-images/community-card.svg);
         height: 18rem;
         width: 24rem;
         display: flex;
     }
-    &__link--communities{
-        color: $primary-color;
-        background-color: white;
-        margin-bottom: 3rem;
-        
+
+    &__link--communities {
+        @include link;
+        color: white;
+        background-color: $primary-highlight;
+        width: 22.5rem;
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding: 0 .75rem;
+        text-align: center;
+
+    }
+    &__link--communities:hover {
+        text-decoration: underline white dotted;
     }
 
-
-    &__section--regions{
+    &__section--regions {
+        display: flex;
         flex-direction: column;
-        
+        margin: 1rem;
     }
-    &__section--regions-img{
-        background: center/100% no-repeat url(../../assets/images/category-images/region-images/regions-2.svg);
+
+    &__section--regions-img {
+        background: center/cover no-repeat url(../../assets/images/category-images/region-images/regions-2.svg);
         height: 18rem;
         width: 24rem;
         display: flex;
     }
-    &__link--regions{
-        color: $primary-color;
-        background-color: white;
-        margin-bottom: 3rem;
-       
+
+    &__link--regions {
+        @include link;
+        width: 22.5rem;
+        color: white;
+        background-color: $primary-highlight;        
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding: 0 .75rem;
+        text-align: center;
+    }
+    &__link--regions:hover {
+        text-decoration: underline white dotted;
     }
 }

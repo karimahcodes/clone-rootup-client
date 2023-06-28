@@ -50,3 +50,11 @@
     object-fit: cover;
     object-position: center;
 }
+@mixin link{
+    text-decoration: none;
+    color: $primary-color;   
+}
+
+@mixin link-hover{
+    text-decoration: underline $primary-highlight dotted;
+}
