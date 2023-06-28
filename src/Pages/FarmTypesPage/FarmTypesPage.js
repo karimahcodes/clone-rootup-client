@@ -61,11 +61,11 @@ export default function FarmTypesPage() {
                         </Link>
                     </section>
                 </section>
-            <figure className='farmTypes__figure'>
-                <img className="farmTypes__img" src={Hackett_Leaf} alt="an AI-imagined bride holds a bouquetof leafy greens"/>
-                <figcaption> Art by Curry Hackett with Midjourney (AI Tool)
-                 </figcaption>
-            </figure>
+                <figure className='farmTypes__figure'>
+                    <img className="farmTypes__img" src={Hackett_Leaf} alt="an AI-imagined bride holds a bouquetof leafy greens" />
+                    <figcaption> Art by Curry Hackett with Midjourney (AI Tool)
+                    </figcaption>
+                </figure>
             </section>
         </main>
     )

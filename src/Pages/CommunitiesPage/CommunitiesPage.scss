@@ -2,8 +2,8 @@
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
-.communities{
-    @include tablet{
+.communities {
+    @include tablet {
         width: 65vw;
         margin: 0 auto;
         border-left: $primary-color solid .025rem;
@@ -11,29 +11,54 @@
         box-shadow: 0 0 10px rgba($color: $primary-color, $alpha: 1.0);
         padding: .5rem;
     }
-    &__navlink {
-    display: flex;
-    text-decoration: none;
-    
-    align-items: center;
-    margin: .5rem 1rem;
-    color: $primary-color;
-    font-weight: 700;
-    font-family: "FireSans-Italic", Arial, Helvetica, sans-serif;
-}
 
-&__links{
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-&__link{
-   
-    text-decoration: none;
-    @include link;
-}
-&__link:hover{
-    text-decoration: underline dotted $primary-highlight;
-}
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include desktop{
+            flex-direction: row;
+        }
+
+    }
+
+    &__navlink {
+        display: flex;
+        text-decoration: none;
+
+        align-items: center;
+        margin: .5rem 1rem;
+        color: $primary-color;
+        font-weight: 700;
+        font-family: "FireSans-Italic", Arial, Helvetica, sans-serif;
+    }
+
+    &__links {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    &__link {
+
+        text-decoration: none;
+        @include link;
+    }
+
+    &__link:hover {
+        text-decoration: underline dotted $primary-highlight;
+    }
+
+    &__figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        height: 25rem;
+        display: block;
+    }
 }

@@ -47,7 +47,7 @@ export default function About() {
                 <section className='about__guide-section'>
                     <section className="about__usertypes">
                         <h3>Description of User Types:</h3>
-                        <p className='about__description'><span class="bold">APPRENTICE</span>Apprentices are new farmers applying to a learning opportunity on the app (i.e. apprenticeship or farmentorship).
+                        <p className='about__description'><span class="bold">APPRENTICE </span>Apprentices are new farmers applying to a learning opportunity on the app (i.e. apprenticeship or farmentorship).
                         </p>
 
 
