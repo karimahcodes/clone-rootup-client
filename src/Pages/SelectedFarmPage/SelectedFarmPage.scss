@@ -3,7 +3,13 @@
 @use '../../styles/partials/variables' as *;
 
 .farm {
-
+    @include tablet{
+        width: 65vw;
+        margin: 0 auto;
+        border-left: $primary-color solid .025rem;
+        border-right: $primary-color solid .025rem;
+        padding: .5rem;
+    }
     &__navlink {
         display: flex;
         text-decoration: none;
@@ -45,7 +51,8 @@
 
     &__map {
         height: 10rem;
-        width: 95vw;
+        // width: 95vw;
+        width: 100%;
         border-bottom: lightblue;
         background-color: grey;
         background-image: url(../../assets/images/category-images/region-images/map-placeholder.svg);

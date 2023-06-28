@@ -6,7 +6,7 @@ import backArrow from '../../assets/icons/arrow-back_icon.svg';
 import FarmDetails from '../../Components/FarmDetails/FarmDetails';
 
 //Parent Component: FarmListPage
-
+//Child Component: FarmDetails
 
 export default function SelectedFarmPage(){
     const {farmId}= useParams();
