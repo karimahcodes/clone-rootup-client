@@ -22,11 +22,18 @@
         font-family: "FireSans-Italic", Arial, Helvetica, sans-serif;
     }
 
+    &__links{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
     &__link{
+       
         text-decoration: none;
+        @include link;
     }
     &__link:hover{
         text-decoration: underline dotted $primary-highlight;
     }
-
 }
