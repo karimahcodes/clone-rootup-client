@@ -17,8 +17,7 @@ export default function CommunitiesPage(){
         
             <section className='regions__section--US-NE'>
                 <Link className="regions__link" to="/categories/regions?region=US-NE">
-                    <h3 className='regions__label'>(US-NE) NorthEast</h3>
-                    {/* <img className='' src='#' alt=''/>  test bg image with descriptive label*/}
+                    <h3 className='regions__label'>(US-NE) NorthEast</h3>                   
                 </Link>
             </section>
             <section className='regions__section--US-SE'>

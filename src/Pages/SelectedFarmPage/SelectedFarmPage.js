@@ -2,7 +2,6 @@ import './SelectedFarmPage.scss';
 import { Link, NavLink, useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
 import backArrow from '../../assets/icons/arrow-back_icon.svg';
 import FarmDetails from '../../Components/FarmDetails/FarmDetails';
 
@@ -11,7 +10,6 @@ import FarmDetails from '../../Components/FarmDetails/FarmDetails';
 
 export default function SelectedFarmPage(){
     const {farmId}= useParams();
-    // const farmImageSource = farm.farmImageSource
     const [farm, setFarm] = useState(null);
     let navigate = useNavigate(); 
     function goBack(){ 

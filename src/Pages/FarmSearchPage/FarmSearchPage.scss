@@ -9,16 +9,9 @@
     &__section--farmtypes{
         display: flex;
         flex-direction: column;
-        // justify-content: flex-end;
-        // @include tablet{
-        //     flex-direction: row;
-        //     align-items: center;
-        //     justify-content: space-evenly;
-        // }
     }
     &__section--farmtypes-img{
         background: center/100% no-repeat url(../../assets/images/category-images/farmtype-images/farmtype-card.svg);
-        // background-position
         height: 18rem;
         width: 24rem;
         display: flex;
@@ -27,8 +20,7 @@
         color: $primary-color;
         background-color: white;
         margin-bottom: 3rem;
-        // border-bottom-left-radius: 20px solid $primary-color;
-        // // box-shadow: 0 0 5px $dark-primary;
+
     }
 
     
@@ -38,15 +30,9 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        // @include tablet{
-        //     flex-direction: row;
-        //     align-items: center;
-        //     justify-content: space-evenly;
-        // }
         }
     &__section--communities-img{
         background: center/cover no-repeat url(../../assets/images/category-images/community-images/community-card.svg);
-        // background-position
         height: 18rem;
         width: 24rem;
         display: flex;
@@ -55,23 +41,16 @@
         color: $primary-color;
         background-color: white;
         margin-bottom: 3rem;
-        // border-bottom-left-radius: 20px solid $primary-color;
-        // box-shadow: 0 0 5px 
+        
     }
 
 
     &__section--regions{
         flex-direction: column;
-        // justify-content: flex-end;
-        // @include tablet{
-        //     flex-direction: row;
-        //     align-items: center;
-        //     justify-content: space-evenly;
-        // }
+        
     }
     &__section--regions-img{
         background: center/100% no-repeat url(../../assets/images/category-images/region-images/regions-2.svg);
-        // background-position
         height: 18rem;
         width: 24rem;
         display: flex;
@@ -80,7 +59,6 @@
         color: $primary-color;
         background-color: white;
         margin-bottom: 3rem;
-        // border-bottom-left-radius: 20px solid $primary-color;
-        // box-shadow: 0 0 5px 
+       
     }
 }

@@ -25,12 +25,12 @@
 
 @mixin CTA-btn {
     text-decoration: none;
-    background-color: $primary-color;     //placeholder
+    background-color: $primary-color;     
     color: white;
     text-align: center;
     width: 15rem;
     padding: .5rem 0;
-    margin: .25rem;                     //placeholder
+    margin: .25rem;                     
     border-radius: 20px;
         &:hover{
             background-color: black;

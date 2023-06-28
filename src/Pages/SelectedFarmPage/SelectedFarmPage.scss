@@ -15,8 +15,6 @@
         font-family: "FireSans-Italic", Arial, Helvetica, sans-serif;
     }
 
-    // &__back-arrow{}
-
     &__details-body {
         display: flex;
         flex-direction: column;
@@ -26,7 +24,6 @@
 
     &__banner-image {
         @include profile-hero-image;
-        // width: 95vw;
     }
 
     &__title-div{

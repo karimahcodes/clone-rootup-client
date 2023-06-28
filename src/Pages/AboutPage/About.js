@@ -7,7 +7,7 @@ export default function About() {
             <section className='about__image-aboutus'>
 
                 <div className='about__hero-image'>
-                    {/* hero background image goes here */}
+
                 </div>
                 <div className='about__about-us'>
                     <h2 className='about__header'>About rootUP

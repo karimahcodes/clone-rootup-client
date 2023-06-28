@@ -1,8 +1,6 @@
 import './FarmTypesPage.scss';
 import { Link, useNavigate, NavLink } from 'react-router-dom';
 import backArrow from '../../assets/icons/arrow-back_icon.svg';
-// import { useEffect } from 'react';
-
 //parent component: FarmSearchPage
 //child component: ParmListPage
 

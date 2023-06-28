@@ -6,20 +6,12 @@
 
 .details{
     
-    // @include tablet{
-
-    // }
-
     &__location{
         display: flex;
         flex-direction: column;
     }
-    // &__text{}
-    // &__text---location{}
-   
 
     &__table-row{
-        // @include table-row-flex;
         display: flex;
         flex-direction: column;
         border-top: $primary-highlight .025rem solid;
@@ -42,11 +34,9 @@
     }
 
     &__conditional-row{
-        // @include table-row-flex;
         display: flex;
         flex-direction: row;
         
-        // border: red 2px solid;
         justify-content: center;
         align-items: center;
         justify-content: center;
@@ -63,9 +53,7 @@
         color: white;
         text-align: center;
     }
-    // &__table-text--nofee{
-       
-    // }
+
     &__table-row--fee{
         background-color: $RU_grey;
         color:white;
@@ -75,13 +63,10 @@
     
     &__checkbox{
         height: 1.5rem;
-        // border: red solid 1px;
         align-self: center;
     }
     &__affirming{
-        font-weight: 700;
-        // @include table-row-flex;
-        
+        font-weight: 700;       
         justify-content: space-between;
         @include tablet{
             justify-content: flex-start;

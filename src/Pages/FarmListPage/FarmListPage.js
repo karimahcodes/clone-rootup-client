@@ -18,7 +18,6 @@ export default function FarmListPage() {
     }
 
     useEffect(() => {
-        // console.log(searchParams.toString())
         axios
             .get(`http://localhost:8080/categories/${category}?${searchParams.toString()}`)
             .then((response) => {

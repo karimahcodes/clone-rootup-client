@@ -17,7 +17,6 @@ export default function CommunitiesPage(){
             <section className='communities__section--qtbipoc'>
                 <Link className="communities__link" to="/categories/communities?communityType=qtbipoc">
                     <h3 className='communities__label'>QTBIPOC</h3>
-                    {/* <img className='' src='#' alt=''/>  test bg image with descriptive label*/}
                 </Link>
             </section>
             <section className='communities__section--africanDiaspora'>
