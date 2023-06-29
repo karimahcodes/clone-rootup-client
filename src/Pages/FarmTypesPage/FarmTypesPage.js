@@ -4,7 +4,7 @@ import backArrow from '../../assets/icons/arrow-back_icon.svg';
 import Hackett_Leaf from '../../assets/images/site-images/Hackett_Leaf.png'
 
 //parent component: FarmSearchPage
-//child component: ParmListPage
+//child component: FarmListPage
 
 export default function FarmTypesPage() {
     let navigate = useNavigate();
