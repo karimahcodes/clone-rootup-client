@@ -18,7 +18,7 @@ export default function SelectedFarmPage(){
     
     useEffect(()=>{
         axios
-            .get(`http://localhost:8080/farms/${farmId}`)
+            .get(`${process.env.REACT_APP_API_URL}/farms/${farmId}`)
             .then((response)=>{setFarm(response.data)
             
              console.log(response)           
@@ -39,7 +39,7 @@ export default function SelectedFarmPage(){
                 </NavLink>
 
                 <div className='farm__details-body'>
-                    <img className="farm__banner-image" src={`http://localhost:8080/assets/images/${farmImageSource}`} alt="almond orchard" />
+                    <img className="farm__banner-image" src={`${process.env.REACT_APP_API_URL}/assets/images/${farmImageSource}`} alt="almond orchard" />
                     
                     <div className='farm__title-div'>
                         <h1 className='farm__program-name'>{`${farm.programName}`}</h1>

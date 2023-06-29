@@ -3,6 +3,7 @@ import { NavLink, Link, useParams, useSearchParams, useNavigate } from "react-ro
 import axios from 'axios';
 import { useEffect, useState } from "react";
 import backArrow from '../../assets/icons/arrow-back_icon.svg';
+// const API_URL = process.env.REACT_APP_API_URL;
 
 //parent components: FarmTypesPage, RegionsPage, CommunitiesPage
 //child component: SelectedFarmPage
@@ -19,7 +20,7 @@ export default function FarmListPage() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8080/categories/${category}?${searchParams.toString()}`)
+            .get(`process.env.REACT_APP_API_URL/${category}?${searchParams.toString()}`)
             .then((response) => {
                 setFarmList(response.data)
                 console.log(response)
@@ -42,7 +43,7 @@ export default function FarmListPage() {
                     {farmList.map((farm) => (
 
                         <li className="farmList__farm-item">
-                            <img className="farmList__image" src={`http://localhost:8080/assets/images/${farm.farmImageSource}`} alt="farmer photo" />
+                            <img className="farmList__image" src={process.env.REACT_APP_API_URL + `/${farm.farmImageSource}`} alt="farmer photo" />
                             <div className='farmList__link-region'>
                                 <Link className="farmList__item-link" to={farm.id} relative="path">
                                     <h3 className="farmList__farmName">{farm.farmName}</h3>
