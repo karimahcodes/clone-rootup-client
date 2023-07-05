@@ -48,7 +48,8 @@ export default function FarmDetails({ farm }) {
 
             {/* **COMMUNITIES OF FOCUS** */}
             <div className='details__table-row'>
-                <h3 className='details__row-header'>Communities of Focus At This Farm</h3>
+                <h3 className='details__row-header details__row-header--cof'>Communities of Focus At This Farm</h3>
+                <p className='details__description'>This farm's general programming contains information that may appeal to members of the communities below. </p>
                 <div className='details__table-row--regular'>
                     {farm.communityType.includes('qtbipoc') &&
                         <p className='details__farm-type'>QTBIPOC</p>}
@@ -105,6 +106,7 @@ export default function FarmDetails({ farm }) {
                 {/* ***COSTS*** */}
                 <div className='details__table-row'>
                     <h3 className='details__row-header'>Costs and Considerations:</h3>
+                     
                      {/*** FEES***/}
                      {farm.cost.programFee === 0.00 ?
                         <div className='details__table-row--nofee'>
@@ -114,7 +116,7 @@ export default function FarmDetails({ farm }) {
                         </div>
                     }
 
-
+                    
 
                     {/*** PAYS***/}
                     {farm.paidApprenticeship &&
