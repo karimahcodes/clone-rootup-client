@@ -1,80 +1,100 @@
-
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
 
-.details{
-    
-    &__location{
+.details {
+
+
+    &__location {
         display: flex;
         flex-direction: column;
     }
 
-    &__table-row{
+    &__table-row {
         display: flex;
         flex-direction: column;
         border-top: $primary-highlight .025rem solid;
     }
 
-    &__table-row--regular{
+    &__table-row--regular {
         text-align: center;
 
     }
-    &__row-header{
+
+    &__row-header {
         align-self: center;
-        @include tablet{
+        margin-bottom: .5rem;
+
+        @include tablet {
             align-self: flex-start;
         }
+
     }
 
-    &__farm-type{
-        color: $primary-color;
+    &__row-header--cof {
+        margin-bottom: .5rem;
+    }
+
+    &__paragraph {
+        margin-top: 0;
+        font-family: "FireSans-Italic";
+        text-align: center;
+        font-weight: 400;
+        
+    }
+
+    &__row-values {
+       // color: $purple; //$logo-tan;//#800000;
         font-weight: 800;
     }
 
-    &__conditional-row{
+    &__conditional-row {
         display: flex;
         flex-direction: row;
-        
+
         justify-content: center;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
     }
-    
-    &__table-text{
+
+    &__table-text {
         display: inline-block;
         margin: 0.5rem auto;
         padding: .5rem;
     }
-    &__table-row--nofee{
+
+    &__table-row--nofee {
         background-color: $dark-primary;
         color: white;
         text-align: center;
     }
 
-    &__table-row--fee{
+    &__table-row--fee {
         background-color: $RU_grey;
-        color:white;
+        color: white;
         font-weight: 700;
         text-align: center;
     }
-    
-    &__checkbox{
+
+    &__checkbox {
         height: 1.5rem;
         align-self: center;
     }
-    &__affirming{
-        font-weight: 700;       
+
+    &__affirming {
+        font-weight: 700;
         justify-content: space-between;
-        @include tablet{
+
+        @include tablet {
             justify-content: flex-start;
         }
 
 
     }
-    #bold{
+
+    #bold {
         font-weight: 700;
     }
 

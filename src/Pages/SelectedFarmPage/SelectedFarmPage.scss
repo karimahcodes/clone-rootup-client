@@ -3,6 +3,9 @@
 @use '../../styles/partials/variables' as *;
 
 .farm {
+    // background-color: hsla(202, 73%, 35%, 0.131);
+
+
     @include tablet{
         width: 65vw;
         margin: 0 auto;

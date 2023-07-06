@@ -52,7 +52,7 @@ export default function SelectedFarmPage(){
                     </div>
 
                     <div className='farm__CTA-div'>
-                        <Link to='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link'>Apply</Link>
+                        <a href='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link' target="_blank">Apply</a>
                         <a href={`http://${farm.contactInfo.website}`} className='farm__CTA-div--link' target="_blank">Website</a>
                     </div>
 
