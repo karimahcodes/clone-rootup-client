@@ -8,7 +8,8 @@ export default function FarmSearchPage() {
     return (
         <div className='site-bg' style={{
             backgroundImage: `url(${backgroundImage})`,
-            backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+            backgroundRepeat: 'no-repeat', backgroundSize: 'cover' 
+            
         }}>
             <div className='browse'>
                 <section className='browse__section--farmtypes'>

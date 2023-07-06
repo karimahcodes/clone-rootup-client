@@ -20,8 +20,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        border: red 2px solid;
+        // width: 100vw //don't do it girl;
+        // border: red 2px solid;
 
         @include tablet{
         flex-direction: row;
@@ -69,6 +69,7 @@
         width: 20rem;
         margin: 1rem;
         display: flex;
+        // align-self: center //doesn't help;
         align-items: flex-end;
         box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
 
@@ -78,32 +79,32 @@
         }
 
         &--flowerHerb{
-            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            background-image: url(../../assets/images/category-images/farmtype-images/flowerherb_card.jpg);
             @include category-cards;
         }
 
         &--mushroom{
-            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            background-image: url(../../assets/images/category-images/farmtype-images/mushroom_card.jpg);
             @include category-cards;
         }
         &--aquaponicFish{
-            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            background-image: url(../../assets/images/category-images/farmtype-images/aquafish_card.jpg);
             @include category-cards;
         }
         &--gardenSmallSpaceRooftopUrban{
-            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            background-image: url(../../assets/images/category-images/farmtype-images/gardensmall_card.jpg);
             @include category-cards;
         }
         &--beePollinatorInsect{
-            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            background-image: url(../../assets/images/category-images/farmtype-images/beeinsect_card.jpg);
             @include category-cards;
         }
         &--poultryLivestock{
-            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            background-image: url(../../assets/images/category-images/farmtype-images/livestock_card.jpg);
             @include category-cards;
         }
         &--indoorGreenhouse{
-            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            background-image: url(../../assets/images/category-images/farmtype-images/indoorgreen_card.jpg);
             @include category-cards;
         }
     }
