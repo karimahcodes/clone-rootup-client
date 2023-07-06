@@ -4,7 +4,7 @@
 
 
 .farmTypes{
-        width: 100vw;
+        // width: 100vw;
         // display: flex; 
         // flex-direction: column;
     @include tablet{
@@ -55,6 +55,8 @@
         padding: .1rem .5rem;
         width: 100%;
         background-color: white;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
         // background-color: rgba(154, 72, 24, 0.588);
     }
     &__link:hover{
@@ -68,7 +70,42 @@
         margin: 1rem;
         display: flex;
         align-items: flex-end;
-        &--fruitVegetable{}
+        box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
+
+        &--fruitVegetable{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
+
+        &--flowerHerb{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
+
+        &--mushroom{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
+        &--aquaponicFish{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
+        &--gardenSmallSpaceRooftopUrban{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
+        &--beePollinatorInsect{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
+        &--poultryLivestock{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
+        &--indoorGreenhouse{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
     }
     // &__figure{
         
