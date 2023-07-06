@@ -4,6 +4,9 @@
 
 
 .farmTypes{
+        width: 100vw;
+        // display: flex; 
+        // flex-direction: column;
     @include tablet{
         width: 65vw;
         margin: 0 auto;
@@ -17,6 +20,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100vw;
+        border: red 2px solid;
 
         @include tablet{
         flex-direction: row;
@@ -49,7 +54,8 @@
         @include link;
         padding: .1rem .5rem;
         width: 100%;
-        background-color: rgba(154, 72, 24, 0.588);
+        background-color: white;
+        // background-color: rgba(154, 72, 24, 0.588);
     }
     &__link:hover{
         text-decoration: underline dotted $primary-highlight;
@@ -62,6 +68,7 @@
         margin: 1rem;
         display: flex;
         align-items: flex-end;
+        &--fruitVegetable{}
     }
     // &__figure{
         
