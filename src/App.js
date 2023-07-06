@@ -9,7 +9,7 @@ import FarmListPage from './Pages/FarmListPage/FarmListPage';
 import CommunitiesPage from './Pages/CommunitiesPage/CommunitiesPage';
 import RegionsPage from './Pages/RegionsPage/RegionsPage';
 import UserProfilePage from './Pages/UserProfilePage/UserProfilePage';
-import backgroundImage from './assets/images/site-images/soil-sky-bg.svg';
+
 
 function App() {
 
@@ -17,10 +17,7 @@ function App() {
       
     <BrowserRouter>
       <Header />
-      <div className='site-bg' style={{backgroundImage: `url(${backgroundImage})`,
-        backgroundRepeat: 'no-repeat',
-        height: '75vh'
-        }}>
+      
         <Routes>
           
           <Route path="/About" element={<AboutPage />} />
@@ -42,7 +39,7 @@ function App() {
           */}
 
         </Routes>
-      </div>
+  
     </BrowserRouter>
   );
 }
