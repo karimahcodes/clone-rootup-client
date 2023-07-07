@@ -48,8 +48,8 @@ export default function SelectedFarmPage(){
 
                     <FarmDetails farm={farm} key={farm.id}  />
 
-                    <div className='farm__map'>
-                    </div>
+                    {/* <div className='farm__map'>
+                    </div> */}
 
                     <div className='farm__CTA-div'>
                         <a href='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link' target="_blank">Apply</a>

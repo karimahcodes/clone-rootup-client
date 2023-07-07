@@ -13,8 +13,8 @@ export default function CommunitiesPage() {
             <NavLink className='communities__navlink' onClick={goBack}>
                 <img className="communities__back-arrow" src={backArrow} alt="back arrow icon" />Back to Search Categories
             </NavLink>
-            <section className='farmTypes__content'>
-                <section className='farmTypes__links'>
+            <section className='communities__content'>
+                <section className='communities__links'>
                     <section className='communities__section--qtbipoc'>
                         <Link className="communities__link" to="/categories/communities?communityType=qtbipoc">
                             <h3 className='communities__label'>QTBIPOC</h3>

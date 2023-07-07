@@ -44,10 +44,51 @@
 
         text-decoration: none;
         @include link;
+        padding: .1rem .5rem;
+        width: 100%;
+        background-color: white;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
     }
 
     &__link:hover {
         text-decoration: underline dotted $primary-highlight;
+    }
+    &__section{
+        border: 2px solid $primary-color;
+        height: 15rem;
+        width: 20rem;
+        margin: 1rem;
+        display: flex;
+        // align-self: center //doesn't help;
+        align-items: flex-end;
+        box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
+        
+        // &--qtbipoc{
+        //     background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+        //     @include category-cards;
+        // }
+        // &--africanDiaspora{
+        //     background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+        //     @include category-cards;
+        // }
+        // &--aapi{
+        //     background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+        //     @include category-cards;
+        // }
+        // &--latinAmerican{
+        //     background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+        //     @include category-cards;
+        // }
+        // &--arabMENA{
+        //     background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+        //     @include category-cards;
+        // }
+        // &--nativeAmerican{
+        //     background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+        //     @include category-cards;
+        // }
+    
     }
 
     &__figure {
