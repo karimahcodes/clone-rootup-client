@@ -86,6 +86,7 @@
         &--mushroom{
             background-image: url(../../assets/images/category-images/farmtype-images/mushroom_card.jpg);
             @include category-cards;
+            object-fit: cover;
         }
         &--aquaponicFish{
             background-image: url(../../assets/images/category-images/farmtype-images/aquafish_card.jpg);
