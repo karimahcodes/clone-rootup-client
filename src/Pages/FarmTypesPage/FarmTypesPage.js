@@ -17,6 +17,7 @@ export default function FarmTypesPage() {
             <NavLink className='farmTypes__navlink' onClick={goBack}>
                 <img className="farmTypes__back-arrow" src={backArrow} alt="back arrow icon" />Back to Search Categories
             </NavLink>
+            <h1 className='regions__header'>Search by Type of Farm</h1>
             <section className='farmTypes__content'>
                 <section className='farmTypes__cards'>
                     <section className='farmTypes__section farmTypes__section--fruitVegetable'>

@@ -16,6 +16,11 @@
         box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
         padding: .5rem;
     }
+    &__header{
+        text-align: center;
+        
+        @include header;
+    }
     &__content{
         display: flex;
         flex-direction: column;
@@ -53,6 +58,7 @@
         @include tablet{
             flex-direction: row;
             flex-wrap: wrap;
+            @include flex-center
         }
     }
 

@@ -14,8 +14,9 @@ export default function CommunitiesPage() {
             <NavLink className='regions__navlink' onClick={goBack}>
                 <img className="regions__back-arrow" src={backArrow} alt="back arrow icon" />Back to Search Categories
             </NavLink>
+            <h1 className='regions__header'>Search by Region</h1>
             <section className='regions__content'>
-                <section className='regions__links'>
+                <section className='regions__cards'>
                     <section className='regions__section regions__section--US-NE'>
                         <Link className="regions__link" to="/categories/regions?region=US-NE">
                             <h3 className='regions__label'>(US-NE) NorthEast</h3>
