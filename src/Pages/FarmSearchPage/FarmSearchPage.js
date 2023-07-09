@@ -41,6 +41,15 @@ export default function FarmSearchPage() {
                             <h2 className='browse__subheader'>Search by Region</h2>
                         </Link>
                     </section>
+                    <section className='browse__section--trades'>
+
+                        <div className='browse__section--trades-img'>
+                        </div>
+
+                        <Link className='browse__link--regions' to="/browse">
+                            <h2 className='browse__subheader'>Search by Auxiliary Trades</h2>
+                        </Link>
+                    </section>
                 </div>
             </div>
         </div>

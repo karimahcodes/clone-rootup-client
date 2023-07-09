@@ -2,8 +2,12 @@
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
+.site-bg{
+    height: 100%;
+}
+
 .farm {
-    // background-color: hsla(202, 73%, 35%, 0.131);
+    background-color: white;
 
 
     @include tablet{

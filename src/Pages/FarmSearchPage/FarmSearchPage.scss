@@ -125,4 +125,29 @@
     &__link--regions:hover {
         text-decoration: underline white dotted;
     }
+
+    &__section--trades {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    &__section--trades-img {
+        background: center/cover no-repeat url(../../assets/images/category-images/auxiliary-trades/Trades.png);
+        height: 18rem;
+        width: 24rem;
+        display: flex;
+    }
+    &__link--trades {
+        @include link;
+        width: 22.5rem;
+        color: white;
+        background-color: $primary-highlight;        
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding: 0 .75rem;
+        text-align: center;
+    }
+    &__link--trades:hover {
+        text-decoration: underline white dotted;
+    }
 }
