@@ -2,6 +2,19 @@
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
+
+// .browse-wrapper{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     border: solid red 2px;
+
+.browse__header{
+    text-align: center;
+    padding: 4rem;
+
+}
 .browse {
     display: flex;
     flex-direction: column;
@@ -9,20 +22,21 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0.903);
     padding-bottom: 6rem;
-     
+    
     @include tablet {
         width: 65vw;
         margin: 0 auto;
         border-left: $primary-color solid .025rem;
         border-right: $primary-color solid .025rem;
         box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
-        padding: .5rem .5rem 6rem .5rem;
+        padding: 4rem .5rem 6rem .5rem;
     }
     @include desktop{
             flex-direction: row;
             flex-wrap: wrap;
         }
-
+    // }
+    
     &__section--farmtypes {
         display: flex;
         flex-direction: column;

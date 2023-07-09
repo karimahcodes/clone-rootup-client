@@ -3,6 +3,7 @@
 @use '../../styles/partials/variables' as *;
 
 .regions {
+    background-color: rgba($color: $purple, $alpha: .05);
     @include tablet {
         width: 65vw;
         margin: 0 auto;
@@ -16,8 +17,9 @@
         display: flex;
         flex-direction: column;
 
-        @include desktop {
+        @include tablet {
             flex-direction: row;
+            flex-wrap: wrap;
         }
 
     }
