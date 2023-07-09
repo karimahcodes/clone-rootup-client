@@ -1,5 +1,5 @@
 import './About.scss';
-import hackett4 from '../../assets/images/site-images/Derby_Hackett4.png'
+// import hackett4 from '../../assets/images/site-images/Derby_Hackett4.png'
 export default function About() {
     return (
         <div className='about'>

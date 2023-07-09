@@ -2,6 +2,10 @@
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
+.site-bg{
+    height: 100vh;
+}
+
 .farmList{
     //FIX MOBILE RESPONSIVENESS
 

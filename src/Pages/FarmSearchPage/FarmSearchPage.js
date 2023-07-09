@@ -1,6 +1,6 @@
 import './FarmSearchPage.scss';
 import { Link } from 'react-router-dom';
-import backgroundImage from '../../assets/images/site-images/dandelion-seed.svg';
+import backgroundImage from '../../assets/images/site-images/dandelion.png';
 //child components: FarmTypesPage, RegionsPage, CommunitiesPage
 //AKA BROWSE Farms page
 export default function FarmSearchPage() {

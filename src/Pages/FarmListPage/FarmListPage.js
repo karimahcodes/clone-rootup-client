@@ -36,7 +36,7 @@ export default function FarmListPage() {
         return (
             <div className='site-bg' style={{
                 backgroundImage: `url(${backgroundImage})`,
-                backgroundRepeat: 'no-repeat', backgroundPositionY: '-50rem', backgroundSize: 'cover', backgroundPosition: 'center'
+                backgroundRepeat: 'repeat-y', backgroundPositionY: '-50rem', backgroundSize: 'cover', backgroundPosition: 'center'
 
             }}>
 
