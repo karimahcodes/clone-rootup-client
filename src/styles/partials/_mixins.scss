@@ -62,6 +62,11 @@
 @mixin category-cards{
     background-size: cover;
     background-position: center;   
-    border-radius: .5rem;
-    
+    border-radius: .5rem;  
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
