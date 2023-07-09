@@ -7,6 +7,7 @@
         // width: 100vw;
         // display: flex; 
         // flex-direction: column;
+        background-color: rgba($color: $logo-tan, $alpha: .05);
     @include tablet{
         width: 65vw;
         margin: 0 auto;
@@ -20,6 +21,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 6rem;
         // width: 100vw //don't do it girl;
         // border: red 2px solid;
 
@@ -47,6 +49,11 @@
         // not centering
         justify-content: center;
         align-items: center;
+        
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     &__link{
@@ -85,16 +92,17 @@
 
         &--mushroom{
             background-image: url(../../assets/images/category-images/farmtype-images/mushroom_card.jpg);
-            @include category-cards;
-            object-fit: cover;
+            @include category-cards;            
         }
         &--aquaponicFish{
             background-image: url(../../assets/images/category-images/farmtype-images/aquafish_card.jpg);
             @include category-cards;
+            
         }
         &--gardenSmallSpaceRooftopUrban{
             background-image: url(../../assets/images/category-images/farmtype-images/gardensmall_card.jpg);
             @include category-cards;
+            background-position-y: bottom;
         }
         &--beePollinatorInsect{
             background-image: url(../../assets/images/category-images/farmtype-images/beeinsect_card.jpg);

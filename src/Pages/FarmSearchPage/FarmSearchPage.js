@@ -1,6 +1,6 @@
 import './FarmSearchPage.scss';
 import { Link } from 'react-router-dom';
-import backgroundImage from '../../assets/images/site-images/soil-sky-bg.svg';
+import backgroundImage from '../../assets/images/site-images/dandelion-seed.svg';
 //child components: FarmTypesPage, RegionsPage, CommunitiesPage
 //AKA BROWSE Farms page
 export default function FarmSearchPage() {
@@ -18,7 +18,7 @@ export default function FarmSearchPage() {
                     </div>
 
                     <Link className='browse__link--farmtypes' to="/browse/farmtypes">
-                        <h2 className='browse__subheader'>Search by Type of Farm Production</h2>
+                        <h2 className='browse__subheader'>Search by Type of Farm</h2>
                     </Link>
                 </section>
                 <section className='browse__section--communities'>
