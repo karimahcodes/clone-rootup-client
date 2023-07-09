@@ -2,8 +2,9 @@
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
-.regions{
-    @include tablet{
+.regions {
+    background-color: rgba($color: $purple, $alpha: .05);
+    @include tablet {
         width: 65vw;
         margin: 0 auto;
         border-left: $primary-color solid .025rem;
@@ -11,12 +12,18 @@
         box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
         padding: .5rem;
     }
-    
+    &__header{
+        text-align: center;
+        
+        @include header;
+    }
     &__content {
         display: flex;
         flex-direction: column;
-        @include desktop{
+
+        @include tablet {
             flex-direction: row;
+            flex-wrap: wrap;
         }
 
     }
@@ -24,7 +31,7 @@
     &__navlink {
         display: flex;
         text-decoration: none;
-        
+
         align-items: center;
         margin: .5rem 1rem;
         color: $primary-color;
@@ -32,32 +39,93 @@
         font-family: "FireSans-Italic", Arial, Helvetica, sans-serif;
     }
 
-    &__links{
+    &__cards {
         padding-top: 1rem;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-    }
-    &__link{
-       
-        text-decoration: none;
-        @include link;
-    }
-    &__link:hover{
-        text-decoration: underline dotted $primary-highlight;
-    }
-    &__figure {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-                
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include flex-center
+        }
     }
 
-    &__img {
-        height: 25rem;
-        display: block;
-        
+    &__link {
+
+        text-decoration: none;
+        @include link;
+        padding: .1rem .5rem;
+        width: 100%;
+        background-color: white;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
     }
-}
+
+    &__link:hover {
+        text-decoration: underline dotted $primary-highlight;
+    }
+
+    &__section {
+        border: 2px solid $primary-color;
+        height: 15rem;
+        width: 20rem;
+        margin: 1rem;
+        display: flex;
+        // align-self: center //doesn't help;
+        align-items: flex-end;
+        box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
+
+        &--US-NE {
+            background-image: url(../../assets/images/category-images/region-images/USNE.jpg);
+            @include category-cards;
+        }
+
+        &--US-SE {
+            background-image: url(../../assets/images/category-images/region-images/USSE.jpg);
+            @include category-cards;
+        }
+
+        &--US-MW {
+            background-image: url(../../assets/images/category-images/region-images/USMW.jpg);
+            @include category-cards;
+        }
+
+        &--US-W {
+            background-image: url(../../assets/images/category-images/region-images/USNW.jpg);
+            @include category-cards;
+        }
+
+        &--US-SO {
+            background-image: url(../../assets/images/category-images/region-images/USSO.jpg);
+            @include category-cards;
+        }
+
+        &--US-PO {
+            background-image: url(../../assets/images/category-images/region-images/USPO.jpg);
+            @include category-cards;
+        }
+
+        &--US-CAR {
+            background-image: url(../../assets/images/category-images/region-images/USCAR.jpg);
+            @include category-cards;
+        }
+
+        }
+
+
+        // &__figure {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        //     margin: 0 auto;
+
+        // }
+
+        &__img {
+            height: 25rem;
+            display: block;
+
+        }
+    }

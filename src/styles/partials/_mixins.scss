@@ -58,3 +58,34 @@
 @mixin link-hover{
     text-decoration: underline $primary-highlight dotted;
 }
+
+@mixin category-cards{
+    background-size: cover;
+    background-position: center;   
+    border-radius: .5rem;  
+}
+
+@mixin cards-container-flex{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include flex-center
+        }
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin header{
+    color: $dark-primary;
+}

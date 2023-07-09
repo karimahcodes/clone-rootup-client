@@ -4,6 +4,10 @@
 
 
 .farmTypes{
+        // width: 100vw;
+        // display: flex; 
+        // flex-direction: column;
+        background-color: rgba($color: $logo-tan, $alpha: .05);
     @include tablet{
         width: 65vw;
         margin: 0 auto;
@@ -12,11 +16,24 @@
         box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
         padding: .5rem;
     }
+    &__header{
+        text-align: center;
+        
+        @include header;
+    }
     &__content{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 6rem;
+        // width: 100vw //don't do it girl;
+        // border: red 2px solid;
 
+        // @include tablet{
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // }
     }
     &__navlink {
         display: flex;
@@ -29,19 +46,82 @@
         font-family: "FireSans-Italic", Arial, Helvetica, sans-serif;
     }
     
-    &__links{
+    &__cards{
         padding-top: 1rem;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        // not centering
+        justify-content: center;
+        align-items: center;
+        
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include flex-center
+        }
     }
+
     &__link{
-       
         text-decoration: none;
         @include link;
+        padding: .1rem .5rem;
+        width: 100%;
+        background-color: white;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        // background-color: rgba(154, 72, 24, 0.588);
     }
     &__link:hover{
         text-decoration: underline dotted $primary-highlight;
+    }
+
+    &__section{
+        border: 2px solid $primary-color;
+        height: 15rem;
+        width: 20rem;
+        margin: 1rem;
+        display: flex;
+        // align-self: center //doesn't help;
+        align-items: flex-end;
+        box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
+
+        &--fruitVegetable{
+            background-image: url(../../assets/images/category-images/farmtype-images/fruitveg_card.jpg);
+            @include category-cards;
+        }
+
+        &--flowerHerb{
+            background-image: url(../../assets/images/category-images/farmtype-images/flowerherb_card.jpg);
+            @include category-cards;
+        }
+
+        &--mushroom{
+            background-image: url(../../assets/images/category-images/farmtype-images/mushroom_card.jpg);
+            @include category-cards;            
+        }
+        &--aquaponicFish{
+            background-image: url(../../assets/images/category-images/farmtype-images/aquafish_card.jpg);
+            @include category-cards;
+            
+        }
+        &--gardenSmallSpaceRooftopUrban{
+            background-image: url(../../assets/images/category-images/farmtype-images/gardensmall_card.jpg);
+            @include category-cards;
+            background-position-y: bottom;
+        }
+        &--beePollinatorInsect{
+            background-image: url(../../assets/images/category-images/farmtype-images/beeinsect_card.jpg);
+            @include category-cards;
+        }
+        &--poultryLivestock{
+            background-image: url(../../assets/images/category-images/farmtype-images/livestock_card.jpg);
+            @include category-cards;
+        }
+        &--indoorGreenhouse{
+            background-image: url(../../assets/images/category-images/farmtype-images/indoorgreen_card.jpg);
+            @include category-cards;
+        }
     }
     // &__figure{
         

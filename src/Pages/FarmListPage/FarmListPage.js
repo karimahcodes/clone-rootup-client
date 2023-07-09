@@ -3,6 +3,7 @@ import { NavLink, Link, useParams, useSearchParams, useNavigate } from "react-ro
 import axios from 'axios';
 import { useEffect, useState } from "react";
 import backArrow from '../../assets/icons/arrow-back_icon.svg';
+import backgroundImage from '../../assets/images/site-images/melon.png';
 // const API_URL = process.env.REACT_APP_API_URL;
 
 //parent components: FarmTypesPage, RegionsPage, CommunitiesPage
@@ -33,30 +34,35 @@ export default function FarmListPage() {
     } else {
 
         return (
+            <div className='site-bg' style={{
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundRepeat: 'repeat-y', backgroundPositionY: '-50rem', backgroundSize: 'cover', backgroundPosition: 'center'
 
-            <div className='farmList'>
-                <NavLink className='farmList__navlink' onClick={goBack}>
-                    <img className="farmList__back-arrow" src={backArrow} alt="back arrow icon" />Back to Subcategory List
-                </NavLink>
+            }}>
 
-                <ul className="farmList__list">
-                    {farmList.map((farm) => (
+                <div className='farmList'>
+                    <NavLink className='farmList__navlink' onClick={goBack}>
+                        <img className="farmList__back-arrow" src={backArrow} alt="back arrow icon" />Back to Subcategory List
+                    </NavLink>
 
-                        <li className="farmList__farm-item">
-                            <img className="farmList__image" src={`${process.env.REACT_APP_API_URL}/assets/images/${farm.farmImageSource}`} alt="farmer photo" />
-                            <div className='farmList__link-region'>
-                                <Link className="farmList__item-link" to={farm.id} relative="path">
-                                    <h3 className="farmList__farmName">{farm.farmName}</h3>
-                                </Link>
-                                <p className="farmList__farmRegion"><span className='farmList__span'>Region:</span> {farm.region}</p>
-                            </div>
-                        </li>
+                    <ul className="farmList__list">
+                        {farmList.map((farm) => (
 
-                    ))}
-                </ul>
+                            <li className="farmList__farm-item">
+                                <img className="farmList__image" src={`${process.env.REACT_APP_API_URL}/assets/images/${farm.farmImageSource}`} alt="farmer photo" />
+                                <div className='farmList__link-region'>
+                                    <Link className="farmList__item-link" to={farm.id} relative="path">
+                                        <h3 className="farmList__farmName">{farm.farmName}</h3>
+                                    </Link>
+                                    <p className="farmList__farmRegion"><span className='farmList__span'>Region:</span> {farm.region}</p>
+                                </div>
+                            </li>
 
+                        ))}
+                    </ul>
+
+                </div>
             </div>
-
         )
     }
 }

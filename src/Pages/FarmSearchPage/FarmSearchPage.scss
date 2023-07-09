@@ -2,22 +2,45 @@
 @use '../../styles/partials/typography' as *;
 @use '../../styles/partials/variables' as *;
 
+
+// .browse-wrapper{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     border: solid red 2px;
+.site-bg{
+    height: 100vh;
+}
+
+.browse__header{
+    text-align: center;
+    padding: 4rem;
+    @include header;
+
+}
 .browse {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-color: rgba(255, 255, 255, 0.903);
+    padding-bottom: 6rem;
+    
     @include tablet {
         width: 65vw;
         margin: 0 auto;
         border-left: $primary-color solid .025rem;
         border-right: $primary-color solid .025rem;
         box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
-        padding: .5rem;
+        padding: 4rem .5rem 6rem .5rem;
     }
-
-
+    @include desktop{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    // }
+    
     &__section--farmtypes {
         display: flex;
         flex-direction: column;
@@ -57,7 +80,7 @@
     }
 
     &__section--communities-img {
-        background: center/cover no-repeat url(../../assets/images/category-images/community-images/community-card.svg);
+        background: center/cover no-repeat url(../../assets/images/category-images/community-images/community-card.png);
         height: 18rem;
         width: 24rem;
         display: flex;
@@ -84,7 +107,7 @@
     }
 
     &__section--regions-img {
-        background: center/cover no-repeat url(../../assets/images/category-images/region-images/regions-2.svg);
+        background: center/cover no-repeat url(../../assets/images/category-images/region-images/regions-card.png);
         height: 18rem;
         width: 24rem;
         display: flex;
@@ -100,6 +123,31 @@
         text-align: center;
     }
     &__link--regions:hover {
+        text-decoration: underline white dotted;
+    }
+
+    &__section--trades {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    &__section--trades-img {
+        background: center/cover no-repeat url(../../assets/images/category-images/auxiliary-trades/Trades.png);
+        height: 18rem;
+        width: 24rem;
+        display: flex;
+    }
+    &__link--trades {
+        @include link;
+        width: 22.5rem;
+        color: white;
+        background-color: $primary-highlight;        
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding: 0 .75rem;
+        text-align: center;
+    }
+    &__link--trades:hover {
         text-decoration: underline white dotted;
     }
 }

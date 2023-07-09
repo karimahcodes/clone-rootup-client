@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import backArrow from '../../assets/icons/arrow-back_icon.svg';
 import FarmDetails from '../../Components/FarmDetails/FarmDetails';
-
+import backgroundImage from '../../assets/images/site-images/helicopter.png';
 //Parent Component: FarmListPage
 //Child Component: FarmDetails
 
@@ -33,6 +33,12 @@ export default function SelectedFarmPage(){
         const farmImageSource = farm.farmImageSource;
 
         return (
+            <div className='site-bg' style={{
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundRepeat: 'repeat-y', backgroundPositionY: '-50rem', backgroundSize: 'auto 100%', height: '200vh',
+                backgroundColor: '#9d49181a'
+
+            }}>
             <main className='farm'>
                 <NavLink className='farm__navlink' onClick={goBack}>
                     <img className="farm__back-arrow" src={backArrow} alt="back arrow icon" />Back to Farm List
@@ -48,16 +54,17 @@ export default function SelectedFarmPage(){
 
                     <FarmDetails farm={farm} key={farm.id}  />
 
-                    <div className='farm__map'>
-                    </div>
+                    {/* <div className='farm__map'>
+                    </div> */}
 
                     <div className='farm__CTA-div'>
-                        <Link to='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link'>Apply</Link>
+                        <a href='https://www.soulfirefarm.org/programs/bipoc-trainings/FIRE/' className='farm__CTA-div--link' target="_blank">Apply</a>
                         <a href={`http://${farm.contactInfo.website}`} className='farm__CTA-div--link' target="_blank">Website</a>
                     </div>
 
                 </div>
             </main>
+            </div>
         )
     }
 }
