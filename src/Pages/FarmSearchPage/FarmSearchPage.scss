@@ -16,6 +16,7 @@
 .browse__header{
     text-align: center;
     padding: 4rem;
+    @include header;
 
 }
 .browse {
@@ -79,7 +80,7 @@
     }
 
     &__section--communities-img {
-        background: center/cover no-repeat url(../../assets/images/category-images/community-images/community-card.svg);
+        background: center/cover no-repeat url(../../assets/images/category-images/community-images/community-card.png);
         height: 18rem;
         width: 24rem;
         display: flex;
@@ -106,7 +107,7 @@
     }
 
     &__section--regions-img {
-        background: center/cover no-repeat url(../../assets/images/category-images/region-images/regions-2.svg);
+        background: center/cover no-repeat url(../../assets/images/category-images/region-images/regions-card.png);
         height: 18rem;
         width: 24rem;
         display: flex;

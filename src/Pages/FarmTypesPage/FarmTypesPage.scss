@@ -25,10 +25,10 @@
         // width: 100vw //don't do it girl;
         // border: red 2px solid;
 
-        @include tablet{
-        flex-direction: row;
-        flex-wrap: wrap;
-        }
+        // @include tablet{
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // }
     }
     &__navlink {
         display: flex;
