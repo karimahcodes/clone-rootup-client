@@ -9,7 +9,7 @@ export default function About() {
                 <section className='about__background'>
                     <section className='about__about-us'>
                         <section className='about__about-text'><h2 className='about__header'>About rootUP
-                            </h2>
+                        </h2>
                             <p className='about__description'> rootUP promotes intentionally affirming learning spaces for aspiring BIPOC farmers, especially black farmers who identify as women and/or members of the LGBTQ community. It has a long-term vision for fostering an ecosystem in which internal resources can be more easily identified, developed and accessed by all.</p>
 
                             <p className='about__description'>The primary goals are
@@ -61,44 +61,51 @@ export default function About() {
                         <p className='about__description'><span class="bold">FARMENTOR</span> Farmentors offer to share their knowledge in one-to-one relationships with Apprentices or Cooperative members. They may have knowledge about any topic or skill like irrigation/plumbing, securing land, farming in specific climates, running community programs, raising animals, etc.
                         </p>
                     </section>
+                    <div className='about__regions-communities-div'>
+                        <section className='about__regions'>
+                            <h3>Current Regions</h3>
+                            <ul className='about__list'>
+                                <li className='about__item'>(US-CAR) Caribbean (Puerto Rico, US Virgin Islands)</li>
+                                <li className='about__item'>(US-MW) Midwest</li>
+                                <li className='about__item'>(US-NE) North East</li>
+                                <li className='about__item'>(US-PO) Pacific Ocean (includes Hawaii and other US-occupied territories)</li>
+                                <li className='about__item'>(US-SE) South East</li>
+                                <li className='about__item'>(US-SO) South</li>
+                                <li className='about__item'>(US-W) West/Northwest (includes Alaska)</li>
 
-                    <section className='section__regions'>
-                        <h3>Current Regions</h3>
-                        <ul className='section__list'>
-                            <li className='section__item'>(US-NE) NorthEast</li>
-                            <li className='section__item'>(US-SE) SouthEast</li>
-                            <li className='section__item'>(US-MW) Midwest</li>
-                            <li className='section__item'>(US-W) West/Northwest (includes Alaska)</li>
-                            <li className='section__item'>(US-SO) South</li>
-                            <li className='section__item'>(US-PO) Pacific Ocean (includes Hawaii and other occupied US territories)</li>
-                            <li className='section__item'>(US-CAR) Caribbean (Puerto Rico, US Virgin Islands)</li>
-                        </ul>
-                    </section>
 
-                    <section className='section__communities'>
-                        <h3>Communities currently represented</h3>
-                        <ul className='section__list'>
-                            <li className='section__item'>QTBIPOC</li>
-                            <li className='section__item'>African Diaspora</li>
-                            <li className='section__item'>Asian American Pacific Islander</li>
-                            <li className='section__item'>Latin American</li>
-                            <li className='section__item'>Arab/Middle Eastern/North African</li>
-                            <li className='section__item'>Indigenous/Native American</li>
+
+                            </ul>
+                        </section>
+
+                        <section className='about__communities'>
+                            <h3>Communities currently represented</h3>
+                            <ul className='section__list'>
+                                <li className='section__item'>QTBIPOC - Queer/Trans Black, Indigenous and People of Color</li>
+                                <li className='section__item'>Black / African Diaspora</li>
+                                <li className='section__item'>Asian American Pacific Islander</li>
+                                <li className='section__item'>Latin American</li>
+                                <li className='section__item'>Arab/Middle Eastern/North African</li>
+                                <li className='section__item'>Indigenous/Native American</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div className='about__future'>
+                        <p className='about__description'> Here's what to look forward to from future releases of the app:
+                        </p>
+                        <ul className='about__list'>
+                            <li className='about__list-item'>Search by Skilled Trades</li>
+                            <li className='about__list-item'>New Farm submission form</li>
+                            <li className='about__list-item'>Apprentice user profiles and in-app application submission</li>
+                            <li className='about__list-item'>tools for past apprentices to inform new ones of the quality of their program experiences by leaving feedback and ratings. This is to encourage transparency and accountability between program participants and programs.</li>
+                            <li className='about__list-item'>Farmmentor user profiles and 1-to-1 matching </li>
+                            <li className='about__list-item'>Cooperative user profiles for more experienced farmers forming coops or collective actions </li>
                         </ul>
-                    </section>
-                    <p className='about__description'> Here's what to look forward to from future releases of the app:
-                    </p>
-                    <ul className='about__list'>
-                        <li>Search by Skilled Trades</li>
-                        <li>New Farm submission form</li>
-                        <li>Apprentice user profiles and in-app application submission</li>
-                        <li>tools for past apprentices to inform new ones of the quality of their program experiences by leaving feedback and ratings. This is to encourage transparency and accountability between program participants and programs.</li>
-                        <li>Farmmentor user profiles and 1-to-1 matching </li>
-                        <li>Cooperative user profiles for more experienced farmers forming coops or collective actions </li>
-                    </ul>
-                    <section className='section__feedback'>
+                    </div>
+                    <section className='about__feedback'>
                         <h3>How to submit feedback, additional farms, and requests to contribute:</h3>
-                        <p> rootup.app@gmail.com</p>
+                        <a className='about__email' href="mailto:rootup.app@gmail.com?subject=rootUP%20Contribution" target='_blank'> rootup.app@gmail.com</a>
                     </section>
                 </section>
             </section>
