@@ -10,6 +10,7 @@ import CommunitiesPage from './Pages/CommunitiesPage/CommunitiesPage';
 import RegionsPage from './Pages/RegionsPage/RegionsPage';
 import UserProfilePage from './Pages/UserProfilePage/UserProfilePage';
 import LoginScreen from './Components/LoginScreen/LoginScreen';
+import SignupScreen from './Components/SignupScreen/SignupScreen';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/About" element={<AboutPage />} />
           <Route path="/" element={<AboutPage/>} />
           <Route path="/login" element={<LoginScreen/>} />
+          <Route path="/signup" element={<SignupScreen/>} />
           {/* revisit this and calling from FarmCategory Page instead */}
           
           <Route path="/browse" element={<FarmSearchPage />} />

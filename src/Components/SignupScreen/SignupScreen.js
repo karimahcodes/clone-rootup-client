@@ -3,15 +3,40 @@ import { useState } from "react";
 // import Profile from "./page/Profile";
 import axios from "axios";
 import UserProfilePage from '../../Pages/UserProfilePage/UserProfilePage';
+import { Link } from 'react-router-dom';
 
 
-const baseUrl = process.env.REACT_APP_API_URL;
-const loginUrl = `${baseUrl}/login`;
-const signupUrl = `${baseUrl}/signup`;
+// const baseUrl = process.env.REACT_APP_API_URL;
+// const loginUrl = `${baseUrl}/login`;
+// const signupUrl = `${baseUrl}/signup`;
 
 
 
-export default function SignupScreenScreen() {
+export default function SignupScreen() {
+    <div className='loginScreen'>
+            <h1 className='loginScreen__header'>Join rootUP</h1>
+            <form action='/signup' className='form' method='POST'>
+                <div className="form__field-group">
+                    <label for="username" className='form__label'>Username: </label>
+                    <input id="username" className="form__input" type="text" name="username" placeholder="e.g. myusername" required />
+                </div>
+
+                <div className="form__field-group">
+                    <label for="password" className='form__label'>Password: </label>
+                    <input id="password" className="form__input" type="password" name="password" placeholder="e.g.: Pa$sw0rd" required />
+                </div>
+
+                <div className="form__field-group">
+                    <label for="email" className='form__label'>Email: </label>
+                    <input id="email" className="form__input" type="email" name="email" placeholder="e.g. future-apprentice@newfarmer.com" required />
+                </div>
+
+                <button type="submit" className='form__button'>Sign me up</button>
+                <Link to="/LoginScreen" className='form__rerender' >Or Login</Link>
+            </form>
+        </div>
+    
+    /*
     const [isSignedUp, setIsSignedUp] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isLoginError, setIsLoginError] = useState(false);
@@ -108,5 +133,5 @@ export default function SignupScreenScreen() {
         </div>
 
     )
-
+*/
 }
