@@ -23,7 +23,6 @@ export default function FarmTypesPage() {
                     <section className='farmTypes__section farmTypes__section--fruitVegetable'>
                         <Link className="farmTypes__link" to='/categories/farmtypes?farmType=fruitVegetable'>
                             <h3 className='farmTypes__label'>Fruit and Vegetable Farms</h3>
-
                         </Link>
                     </section>
                     <section className='farmTypes__section farmTypes__section--flowerHerb'>

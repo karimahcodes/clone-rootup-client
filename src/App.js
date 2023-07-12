@@ -22,7 +22,7 @@ function App() {
         <Routes>
           
           <Route path="/About" element={<AboutPage />} />
-          <Route path="/" element={<AboutPage/>} />
+          <Route path="/" element={<FarmSearchPage/>} />
           <Route path="/login" element={<LoginScreen/>} />
           <Route path="/signup" element={<SignupScreen/>} />
           {/* revisit this and calling from FarmCategory Page instead */}
