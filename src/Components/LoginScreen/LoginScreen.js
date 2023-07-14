@@ -3,7 +3,7 @@ import { useState } from "react";
 // import Profile from "./page/Profile";
 import axios from "axios";
 import UserProfilePage from '../../Pages/UserProfilePage/UserProfilePage';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // const baseUrl = process.env.REACT_APP_API_URL;
 // const loginUrl = `${baseUrl}/login`;
@@ -12,7 +12,26 @@ import { Link } from 'react-router-dom';
 
 
 export default function LoginScreen() {
+ /*login with username only*/
+    // const handleLogin = (e) => {
+    //     e.preventDefault();
 
+    //     axios
+    //         .post(loginUrl, {
+    //             username: e.target.username.value,
+    //             password: e.target.password.value,
+    //         })
+    //         .then((response) => {
+    //             sessionStorage.setItem("JWToken", response.data.token); //JWT to client's session storage
+    //             setIsLoggedIn(true);
+    //             setIsLoginError(false);
+    //             setErrorMessage("");
+    //         })
+    //         .catch((error) => {
+    //             setIsLoginError(true);
+    //             setErrorMessage(error.response.data.error.message);
+    //         });
+    // };
     return(
         
         <div className='loginScreen'>
@@ -56,26 +75,7 @@ export default function LoginScreen() {
      };
      */
 
-    /*login with username only*/
-    // const handleLogin = (e) => {
-    //     e.preventDefault();
-
-    //     axios
-    //         .post(loginUrl, {
-    //             username: e.target.username.value,
-    //             password: e.target.password.value,
-    //         })
-    //         .then((response) => {
-    //             sessionStorage.setItem("JWToken", response.data.token); //JWT to client's session storage
-    //             setIsLoggedIn(true);
-    //             setIsLoginError(false);
-    //             setErrorMessage("");
-    //         })
-    //         .catch((error) => {
-    //             setIsLoginError(true);
-    //             setErrorMessage(error.response.data.error.message);
-    //         });
-    // };
+   
     
 
     // const renderSignUp = () => (

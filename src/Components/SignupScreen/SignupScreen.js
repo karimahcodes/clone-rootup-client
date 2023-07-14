@@ -1,8 +1,8 @@
 import './SignupScreen.scss';
 import { useEffect, useState } from "react";
 import axios from "axios";
-import UserProfilePage from '../../Pages/UserProfilePage/UserProfilePage';
-import { Link } from 'react-router-dom';
+// import UserProfilePage from '../../Pages/UserProfilePage/UserProfilePage';
+import { Link, useNavigate } from 'react-router-dom';
 import logosrc from '../../assets/logo/rootUP-logo.svg';
 
 export default function SignupScreen() {
@@ -34,7 +34,7 @@ export default function SignupScreen() {
         */
 
     const [isSignedUp, setIsSignedUp] = useState(false);
-
+    const navigate = useNavigate();
     // const [isLoggedIn, setIsLoggedIn] = useState(false);
     // const [isLoginError, setIsLoginError] = useState(false);
     // const [errorMessage, setErrorMessage] = useState("");
@@ -53,7 +53,9 @@ export default function SignupScreen() {
                 console.log("before set state")
                 setIsSignedUp(true);
                 console.log("setsignup");
+                navigate("/login");
             })
+            
             .catch((error)=>{ console.log(error) 
         });
             
