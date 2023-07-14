@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import UserProfilePage from '../../Pages/UserProfilePage/UserProfilePage';
 import { Link } from 'react-router-dom';
-
+import logosrc from '../../assets/logo/rootUP-logo.svg';
 
 export default function SignupScreen() {
     const baseUrl = process.env.REACT_APP_API_URL;
-     const signupUrl = `${baseUrl}/signup`;
+    const signupUrl = `${baseUrl}/signup`;
      // const loginUrl = `${baseUrl}/login`;   
     /*<div className='loginScreen'>
                 <h1 className='loginScreen__header'>Join rootUP</h1>
@@ -42,7 +42,7 @@ export default function SignupScreen() {
     //signup with email and username
     const handleSignup = (e) => {
         e.preventDefault();
-
+    console.log("prevent default")
         axios
             .post(signupUrl, {
                 username: e.target.username.value,
@@ -50,8 +50,12 @@ export default function SignupScreen() {
                 password: e.target.password.value,
             })
             .then(() => {
+                console.log("before set state")
                 setIsSignedUp(true);
-            });
+                console.log("setsignup");
+            })
+            .catch((error)=>{ console.log(error) 
+        });
             
     };
 
@@ -66,21 +70,21 @@ export default function SignupScreen() {
             // const renderSignUp = () => (
                 <div className='loginScreen'>
                     <h1 className='loginScreen__header'>Join rootUP</h1>
-                    <img src='/'className='signup__logo' alt='circular rootUP logo of an oak tree above and below the '/>
+                    <img src={logosrc} className='signup__logo' alt='circular rootUP logo of an oak tree above and below the word rootUP. An acorn replaces the second letter O.'/>
                     <form onSubmit={handleSignup} className='form'>
                         <div className="form__field-group">
-                            <label for="username" className='form__label'>Username: </label>
-                            <input id="username" className="form__input" type="text" name="username" placeholder="e.g. myusername" required />
+                            <label htmlFor="username" className='form__label'>Username: </label>
+                            <input id="username" className="form__input" type="text" name="username" placeholder="e.g. myusername" autoComplete="current-password" required />
                         </div>
 
                         <div className="form__field-group">
-                            <label for="password" className='form__label'>Password: </label>
-                            <input id="password" className="form__input" type="password" name="password" placeholder="e.g.: Pa$sw0rd" required />
+                            <label htmlFor="password" className='form__label'>Password: </label>
+                            <input id="password" className="form__input" type="password" name="password" placeholder="e.g.: Pa$sw0rd" autoComplete="current-password" required />
                         </div>
 
                         <div className="form__field-group">
-                            <label for="email" className='form__label'>Email: </label>
-                            <input id="email" className="form__input" type="email" name="email" placeholder="e.g. future-apprentice@newfarmer.com" required />
+                            <label htmlFor="email" className='form__label'>Email: </label>
+                            <input id="email" className="form__input" type="email" name="email" placeholder="e.g. future-apprentice@newfarmer.com" autoComplete="current-password" required />
                         </div>
 
                         <button type="submit" className='form__button' /*onClick={toLoginScreen}*/>Sign me up</button>
