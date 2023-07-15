@@ -30,7 +30,7 @@ export default function UserProfilePage() {
 
                         <div className='user__stats-div user__usertype'>
                             <h3 className='user__subheading'>Usertype:</h3>
-                        <p className='user__text'>Apprentice</p>
+                            <p className='user__text'>Apprentice</p>
                         </div>
                     </section>
                     <section className='user__bio'>
