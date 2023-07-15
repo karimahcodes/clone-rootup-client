@@ -1,42 +1,44 @@
 import './LoginScreen.scss';
 import { useState } from "react";
-// import Profile from "./page/Profile";
 import axios from "axios";
-import UserProfilePage from '../../Pages/UserProfilePage/UserProfilePage';
 import { Link, useNavigate } from 'react-router-dom';
-
-// const baseUrl = process.env.REACT_APP_API_URL;
-// const loginUrl = `${baseUrl}/login`;
-// const signupUrl = `${baseUrl}/signup`;
-
 
 
 export default function LoginScreen() {
- /*login with username only*/
-    // const handleLogin = (e) => {
-    //     e.preventDefault();
+    const baseUrl = process.env.REACT_APP_API_URL;
+    const loginUrl = `${baseUrl}/login`;
+    const navigate = useNavigate();
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    // const [isLoginError, setIsLoginError] = useState(false);
+    // const [errorMessage, setErrorMessage] = useState("");
 
-    //     axios
-    //         .post(loginUrl, {
-    //             username: e.target.username.value,
-    //             password: e.target.password.value,
-    //         })
-    //         .then((response) => {
-    //             sessionStorage.setItem("JWToken", response.data.token); //JWT to client's session storage
-    //             setIsLoggedIn(true);
-    //             setIsLoginError(false);
-    //             setErrorMessage("");
-    //         })
-    //         .catch((error) => {
-    //             setIsLoginError(true);
-    //             setErrorMessage(error.response.data.error.message);
-    //         });
-    // };
+    /*login with username and password only*/
+    const handleLogin = (e) => {
+        e.preventDefault();
+
+        axios
+            .post(loginUrl, {
+                username: e.target.username.value,
+                password: e.target.password.value,
+            })
+            .then((response) => {
+                setIsLoggedIn(true);
+                // setIsLoginError(false);
+                navigate("/user");
+                //for demo only. will change to users/:userid when users routes are built out.
+            })
+            .catch((error) => {
+                // setIsLoginError(true);
+                console.log(error)
+                
+            });
+    };
     return(
         
         <div className='loginScreen'>
-            <h1 className='loginScreen__header'>Login rootUP</h1>
-            <form action='/login' className='form' method='POST'>
+            <h1 className='loginScreen__header'>Welcome Back!</h1>
+            <h2>Log in to Your rootUP Account</h2>
+            <form onSubmit={handleLogin} className='form'>
                 <div className="form__field-group">
                     <label for="username" className='form__label'>Username: </label>
                     <input id="username" className='form__input' type="text" name="username" placeholder="e.g. myusername" required />

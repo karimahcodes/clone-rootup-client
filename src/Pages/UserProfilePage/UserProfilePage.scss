@@ -3,11 +3,100 @@
 @use '../../styles/partials/variables' as *;
 
 
-.user{
+.user {
+    // background-color: $Matisse-blue;
     display: flex;
     flex-direction: column;
-    &__image{
-        @include profile-hero-image;
+    justify-content: center;
+    align-items: center;
+
+    &__profile-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border: .5px solid $dark-primary;
+        // border-radius: .5rem;
+        margin: 5rem 10rem;
+        padding: 5rem;
+        width: 65vw;
+        height: 100%;
+
+        // background: linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), $primary-highlight, );
     }
+
+    &__image {
+        @include profile-hero-image;
+        border: .05rem black solid;
+        // padding-bottom: 4rem;
+        outline: $dark-primary 2px solid;
+        box-shadow: 0 .4rem .625rem rgba($color: $primary-color, $alpha: 1.0);
+        padding: .5rem;
+        outline-offset: .5rem;
+        border-radius: .01rem;
+        box-shadow: inset;
+    }
+
+    &__subheading {
+        color: $purple;
+    }
+
+    &__stats {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        &__stats-div{
+        margin: 1rem 2rem 0 0;
+        padding-left: 1rem 1rem 0 0;
+
+
+    }
+
+    &__bio {
+        max-width: 65rem;
+        // width: 30rem;
+        margin-right: 2rem;
+        padding: .75rem 2rem;
+        margin-bottom: 1rem;
+
+        box-shadow: .05rem .05rem .325rem rgba($color: $RU_grey, $alpha: 1.0);
+        background-color: rgba($color: $RU_grey, $alpha: 0.1);
+
+    }
+
+    &__career {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__experience {
+        max-width: 30rem;
+        width: 30rem;
+        margin-right: 2rem;
+        padding: .75rem 2rem;
+        margin-bottom: 1rem;
+
+        box-shadow: .1rem .2rem .625rem rgba($color: $Matisse-blue, $alpha: 1.0);
+        background-color: rgba($color: $Matisse-blue, $alpha: 0.1);
+
+    }
+
+    &__seeks {
+        @include mobile {
+            width: 30rem;
+
+        }
+
+        max-width: 30rem;
+
+        padding: .75rem 2rem;
+        box-shadow: .1rem .2rem .625rem rgba($color: $primary-highlight, $alpha: 1.0);
+        background-color: rgba($color: $primary-highlight, $alpha: 0.1);
+    }
+
+
 
 }

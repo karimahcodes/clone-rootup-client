@@ -1,7 +1,6 @@
 import './SignupScreen.scss';
 import { useEffect, useState } from "react";
 import axios from "axios";
-// import UserProfilePage from '../../Pages/UserProfilePage/UserProfilePage';
 import { Link, useNavigate } from 'react-router-dom';
 import logosrc from '../../assets/logo/rootUP-logo.svg';
 
@@ -35,14 +34,15 @@ export default function SignupScreen() {
 
     const [isSignedUp, setIsSignedUp] = useState(false);
     const navigate = useNavigate();
+    // const [errorMessage, setErrorMessage] = useState("");//change
     // const [isLoggedIn, setIsLoggedIn] = useState(false);
     // const [isLoginError, setIsLoginError] = useState(false);
-    // const [errorMessage, setErrorMessage] = useState("");
+    
 
     //signup with email and username
     const handleSignup = (e) => {
         e.preventDefault();
-    console.log("prevent default")
+        // console.log("prevent default")
         axios
             .post(signupUrl, {
                 username: e.target.username.value,
@@ -50,9 +50,7 @@ export default function SignupScreen() {
                 password: e.target.password.value,
             })
             .then(() => {
-                console.log("before set state")
                 setIsSignedUp(true);
-                console.log("setsignup");
                 navigate("/login");
             })
             
@@ -61,12 +59,6 @@ export default function SignupScreen() {
             
     };
 
-    // const toLoginScreen(){
-    //     if(isSignedUp){
-    //     Navigate();
-    //     } else {}
-    // }
-    // if (!isSignedUp)
 
         return (
             // const renderSignUp = () => (
@@ -89,14 +81,14 @@ export default function SignupScreen() {
                             <input id="email" className="form__input" type="email" name="email" placeholder="e.g. future-apprentice@newfarmer.com" autoComplete="current-password" required />
                         </div>
 
-                        <button type="submit" className='form__button' /*onClick={toLoginScreen}*/>Sign me up</button>
+                        <button type="submit" className='form__button'>Sign me up</button>
                         <Link to="/login" className='form__rerender' >Or Login</Link>
                     </form>
                 </div>
 
             // )
         );
-
+        }
     /*   //login with username only
        const handleLogin = (e) => {
            e.preventDefault();
@@ -175,4 +167,3 @@ export default function SignupScreen() {
  
      )
  */
-}

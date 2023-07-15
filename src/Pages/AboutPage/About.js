@@ -20,7 +20,7 @@ export default function About() {
                                 </ul>
                             </p>
 
-                            <p className='about__description'>Recognizing that many farm training programs in the US do not adequately address the historical precedent and risks of sexual, psychological, physical, and spiritual violence against BIPOC, female-bodied, and LGBTQ apprentices, we hope to encourage members of the farming and gardening communities to design intentionally affirming learning spaces to increase the overall safety of these programs for farmers from marginalized groups.
+                            <p className='about__description'>Recognizing that many farm training programs in the US do not adequately address the historical precedent and risks of sexual, psychological, physical, and spiritual violence against BIPOC, female-bodied, and LGBTQ apprentices, we hope to encourage members of the farming and gardening communities to design intentionally affirming learning spaces to increase the overall safety and accessibility of these programs for farmers from marginalized groups.
                             </p>
                         </section>
                         {/* <figure className='about__about-figure'> 
@@ -35,10 +35,10 @@ export default function About() {
                         <h3 className="about__header">Background:
                         </h3>
                         <p className="about__description">
-                            In the US it is often cited that only less than 2% of all privately owned land is held by BIPOC stewards, with those numbers being even smaller for Black people, BIPOC women, and QTBIPOC (Queer or Trans BIPOC) farmers.
+                            In the US, less than 4% of all privately owned land is held by BIPOC stewards, with those numbers being even smaller for Black people (1.7%), BIPOC women, and QTBIPOC (Queer or Trans BIPOC) farmers.
                         </p>
                         <p className="about__description">
-                            The aging population of farmers occupying most of US farmland differs greatly from the increasingly diverse population of younger Americans, many of whom would be concerned for their safety in predominantly white (and male-led) rural learning spaces where traditional farm apprenticeships are held.
+                            The aging population of farmers occupying most of US farmland differs greatly from the increasingly diverse population of younger Americans, many of whom express concerns for their safety in rural learning spaces where traditional farm apprenticeships are held.
                             And although many of their living elders (and other potential farmmentors) may have migrated from areas (domestically or abroad) where they experienced some connection to agriculture or land/nature stewardship practices to cities in pursuit of insulation from societal challenges, this has disrupted the transmission of critical agricultural knowledge to a younger generation of farmers.
                         </p>
                     </section>
