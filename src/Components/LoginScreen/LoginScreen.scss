@@ -1,0 +1,56 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography' as *;
+@use '../../styles/partials/variables' as *;
+
+.loginScreen{
+    @include flex-center;
+    flex-direction: column;
+      
+    &__header{
+        text-align: center;
+    }
+}
+
+
+.form{
+    @include flex-center;
+    flex-direction: column;
+    
+
+    // &__field-group{
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+
+
+    &__label{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    &__input{
+        width: 20rem;
+        height: 1.5rem;
+    }
+    &__button{
+        @include CTA-btn;
+        font-size: 1.25rem;
+        margin: 2rem;
+    }
+
+    &__rerender{
+        border: none;
+        background-color: transparent;
+        @include link;
+        font-size: 1rem;
+        padding: .5rem;        
+    }
+    &__rerender:hover{
+        @include link-hover;
+    }
+}
