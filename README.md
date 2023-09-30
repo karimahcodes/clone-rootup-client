@@ -8,5 +8,5 @@ The server necessary to run this app is located at https://github.com/karimahcod
 
 Environment variables have been provided but you can feel free to adjust them as needed.
 
-a demo is hosted on my portfolio, and please check back on my profile for updated links to the GoogleFirestore page where it the final app will be hosted.
+a demo is hosted on my portfolio, and please check back on my profile for updated links to the Google Firebase page where it the final app will be hosted.
 
